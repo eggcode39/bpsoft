@@ -1,0 +1,3 @@
+2018-10-15 17:10:04[UTC -5] [ip] ::1 [location] Permit|readAll [text] SIN PERMISOS SUFICIENTES
+2018-10-15 17:10:17[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\eggsoftmanagebillar\app\controllers\PermitController.php: 49[MESSAGGE]Array to string conversion
+
