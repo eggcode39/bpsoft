@@ -7,4 +7,3 @@
  */
 
 echo 'Hola!';
-echo 'Putito';
