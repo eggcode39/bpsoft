@@ -2,10 +2,9 @@
 /**
  * Created by PhpStorm.
  * User: CesarJose39
- * Date: 15/10/2018
- * Time: 17:17
+ * Date: 21/09/2018
+ * Time: 0:34
  */
-//gg
 //Puto si lees esto
 //Aqui implementaré la api con control de sessiones y gestion de roles
 //Establecer zona horaria
@@ -45,7 +44,7 @@ define('_VIEW_PATH_', 'app/views/');
 //Inicio de codigo de la api
 //Verificar existencia de los archivos
 $controlador = $_GET['c'] ?? "none";
-$accion = $_GET['a'] ?? "none";
+$accion = $_GET['a'] ?? "index";
 $function_action = $controlador . "|" . $accion;
 $archivo = 'app/controllers/' . $controlador . 'Controller.php';
 if(file_exists($archivo)){
@@ -53,8 +52,9 @@ if(file_exists($archivo)){
     //Verificar si existe inicio de sesion
     $autorizado = false;
 
-    if(isset($_SESSION['role'])){
+    if(isset($_SESSION['role']) || isset($_COOKIE['role'])){
         $crypt = new Crypt();
+        $role = $_COOKIE['role'] ?? $_SESSION['role'];
         $rol = $crypt->decrypt($_SESSION['role'], 'zxcvbnm');
         $permisos = $controladores_acciones->readPermitscontroller($rol, $controlador);
         foreach ($permisos as $permiso){

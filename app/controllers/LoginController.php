@@ -35,7 +35,21 @@ class LoginController{
 
         } else {
             if(password_verify($password, $singin[0]->user_password)){
-                echo json_encode($singin);
+
+
+                setcookie('id_user', $this->crypt->encrypt($singin[0]->id_user, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('id_person', $this->crypt->encrypt($singin[0]->id_user, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('user_nickname', $this->crypt->encrypt($singin[0]->user_nickname, 'zxcvbnm'), time() + 365 * 24 * 60 * 60);
+                setcookie('user_image', $this->crypt->encrypt($singin[0]->user_image, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('user_email', $this->crypt->encrypt($singin[0]->user_email, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('user_last_login', $this->crypt->encrypt($singin[0]->user_last_login, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('person_name', $this->crypt->encrypt($singin[0]->person_name, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('person_surname', $this->crypt->encrypt($singin[0]->person_surname, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('person_coord_x', $this->crypt->encrypt($singin[0]->person_coord_x, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('person_coord_y', $this->crypt->encrypt($singin[0]->person_coord_y, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('person_genre', $this->crypt->encrypt($singin[0]->person_genre, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
+                setcookie('person_role', $this->crypt->encrypt($singin[0]->person_role, 'zxcvbnm'), time() + 30* 24 * 60 * 60);
+
                 $_SESSION['id_user'] = $this->crypt->encrypt($singin[0]->id_user, 'zxcvbnm');
                 $_SESSION['id_person'] = $this->crypt->encrypt($singin[0]->id_user, 'zxcvbnm');
                 $_SESSION['user_nickname'] = $this->crypt->encrypt($singin[0]->user_nickname, 'zxcvbnm');
@@ -48,6 +62,8 @@ class LoginController{
                 $_SESSION['person_coord_y'] = $this->crypt->encrypt($singin[0]->person_coord_y, 'zxcvbnm');
                 $_SESSION['person_genre'] = $this->crypt->encrypt($singin[0]->person_genre, 'zxcvbnm');
                 $_SESSION['role'] = $this->crypt->encrypt($singin[0]->id_role, 'zxcvbnm');
+                //echo json_encode($singin);
+                echo $singin;
             } else {
                 echo 3;
             }
@@ -70,6 +86,19 @@ class LoginController{
             unset($_SESSION['person_genre']);
             unset($_SESSION['role']);
             session_destroy();
+
+            setcookie('id_user', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('id_person', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('user_nickname', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('user_image', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('user_email', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('user_last_login', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('person_name', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('person_surname', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('person_coord_x', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('person_coord_y', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('person_genre', '1', time() - 365 * 24 * 60 * 60);
+            setcookie('person_role', '1', time() - 365 * 24 * 60 * 60);
             $okey = 1;
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'singOut|LoginController');
