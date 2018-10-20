@@ -1,10 +1,14 @@
 RewriteEngine On
 
-RewriteRule ^api/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) api.php?c=$1&a=$2
-RewriteRule ^api/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) api.php?c=$1&a=$2&id=$3
+RewriteRule ^styles/(.+)?$ styles/$1 [NC,L]
+RewriteRule ^media/(.+)?$ styles/$1 [NC,L]
 
-RewriteRule ^([0-9a-zA-Z]+)/([0-9a-zA-Z]+) index.php?c=$1&a=$2
-RewriteRule ^([0-9a-zA-Z]+)/([0-9a-zA-Z]+)/([0-9a-zA-Z]+) index.php?c=$1&a=$2&id=$3
+RewriteRule ^api/(\w+)/(\w+)/?$ api.php?c=$1&a=$2
+RewriteRule ^api/(\w+)/(\w+)/([a-zA-Z0-9-]*)/?$ api.php?c=$1&a=$2&id=$3
+
+RewriteRule ^(\w+)/?$ index.php?c=$1
+RewriteRule ^(\w+)/(\w+)/?$ index.php?c=$1&a=$2
+RewriteRule ^(\w+)/(\w+)/([a-zA-Z0-9-]*)/?$ index.php?c=$1&a=$2&id=$3
 
 #Para depurar
 #&XDEBUG_SESSION_START=PHPSTORM

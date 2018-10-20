@@ -1,0 +1,14 @@
+2018-10-19 19:10:10[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:11[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:13[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:26[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:28[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:56[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:56[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:56[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:57[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:57[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:57[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:57[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:58[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-19 19:10:58[UTC -5] [ip] ::1 [location] api|Login [text] ACCESO A CONTROLADOR NO EXISTENTE
