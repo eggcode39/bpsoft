@@ -103,8 +103,8 @@
                 if(r==1){
                     //alert('Logueado');
                     alertify.success('Ingreso exitoso');
-                    //location.href = "index.php?c=Admin&a=index"
-                    //location.reload();
+                    //location.href = "<?php echo _SERVER_;?>"
+                    location.reload();
                 } else {
                     //alert('no pe');
                     alertify.error('Usuario y/o Contraseña Incorrectos');

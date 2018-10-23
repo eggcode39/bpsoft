@@ -13,6 +13,10 @@ class IndexController{
     }
 
     public function index(){
+        require _VIEW_PATH_ . 'header.php';
+        require _VIEW_PATH_ . 'navbar.php';
+        require _VIEW_PATH_ . 'admin/index.php';
+        require _VIEW_PATH_ . 'footer.php';
 
     }
 }

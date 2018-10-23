@@ -1,0 +1,124 @@
+2018-10-22 21:10:10[UTC -5] [ip] ::1 [location] queso|index [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-22 21:10:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 24[MESSAGGE]require(app/views/login/login.php): failed to open stream: No such file or directory
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 8[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 10[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 12[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 14[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 16[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 18[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 20[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 21[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 36[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 80[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 82[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 83[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 85[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 87[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 118[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 8[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 10[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 12[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 14[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 16[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 18[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 20[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 21[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 36[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 80[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 82[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 83[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 85[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 87[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\login\login.php: 118[MESSAGGE]Use of undefined constant _LOGIN_STYLES_ - assumed '_LOGIN_STYLES_'
+
+2018-10-22 21:10:33[UTC -5] [ip] ::1 [location] putas|index [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-22 21:10:40[UTC -5] [ip] ::1 [location] quesito|index [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-22 21:10:47[UTC -5] [ip] ::1 [location] quesito|index [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-22 21:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:15[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:19[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:53[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:53[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:55[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:55[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:55[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:55[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:56[UTC -5] [ip] ::1 [location] Login|index [text] Class 'Controller' not found
+2018-10-22 21:10:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\index.php: 86[MESSAGGE]Undefined index: c
+
+2018-10-22 21:10:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 55[MESSAGGE]Undefined property: stdClass::$person_role
+
+2018-10-22 21:10:47[UTC -5] [ip] ::1 [location] Login|index [text] SIN PERMISOS SUFICIENTES
+2018-10-22 21:10:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\admin\index.php: 2[MESSAGGE]require(header.php): failed to open stream: No such file or directory
+
+2018-10-22 21:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\controllers\IndexController.php: 16[MESSAGGE]require(): http:// wrapper is disabled in the server configuration by allow_url_include=0
+
+2018-10-22 21:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\controllers\IndexController.php: 16[MESSAGGE]require(http://localhost/bpsoft/app/view/header.php): failed to open stream: no suitable wrapper could be found
+
+2018-10-22 21:10:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\admin\index.php: 2[MESSAGGE]require(header.php): failed to open stream: No such file or directory
+
+2018-10-22 21:10:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\admin\index.php: 2[MESSAGGE]require(header.php): failed to open stream: No such file or directory
+
+2018-10-22 21:10:44[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\admin\index.php: 516[MESSAGGE]require(footer.php): failed to open stream: No such file or directory
+
+2018-10-22 21:10:29[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 55[MESSAGGE]Undefined property: stdClass::$person_role
+

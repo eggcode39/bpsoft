@@ -40,7 +40,7 @@ class LoginController{
         } else {
             if(password_verify($password, $singin[0]->user_password)){
 
-                /*
+
                 setcookie('id_user', $this->crypt->encrypt($singin[0]->id_user, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
                 setcookie('id_person', $this->crypt->encrypt($singin[0]->id_user, 'zxcvbnm'), time() + 30 * 24 * 60 * 60);
                 setcookie('user_nickname', $this->crypt->encrypt($singin[0]->user_nickname, 'zxcvbnm'), time() + 365 * 24 * 60 * 60);
@@ -65,7 +65,7 @@ class LoginController{
                 $_SESSION['person_coord_x'] = $this->crypt->encrypt($singin[0]->person_coord_x, 'zxcvbnm');
                 $_SESSION['person_coord_y'] = $this->crypt->encrypt($singin[0]->person_coord_y, 'zxcvbnm');
                 $_SESSION['person_genre'] = $this->crypt->encrypt($singin[0]->person_genre, 'zxcvbnm');
-                $_SESSION['role'] = $this->crypt->encrypt($singin[0]->id_role, 'zxcvbnm');*/
+                $_SESSION['role'] = $this->crypt->encrypt($singin[0]->id_role, 'zxcvbnm');
                 //echo json_encode($singin);
                 //echo $singin;
                 echo 1;

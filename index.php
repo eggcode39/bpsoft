@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: CesarJose39
- * Date: 21/09/2018
- * Time: 0:34
+ * Date: 22/10/2018
+ * Time: 11:28
  */
 //Puto si lees esto
 //Aqui implementaré la api con control de sessiones y gestion de roles
@@ -14,14 +14,13 @@ require 'core/Database.php';
 //Levantamiento del Log para registro de errores
 require "app/models/Log.php";
 //Levantamiento de registro de roles y permisos
-require_once "app/models/Role.php";
+require_once "app/models/Menu.php";
 $errores = new Log();
-$controladores_acciones = new Role();
+$vistas = new Menu();
 
 //echo var_dump($permisos);
 
 //Inicio clase para la encriptacion de contenido
-
 require 'app/models/Crypt.php';
 
 // Errores de PHP a Try/Catch
@@ -40,15 +39,28 @@ session_start();
 
 // path
 // Definicion Variables Globales
-define('_SERVER_', 'http://localhost/eggsoftmanagebillar/');
-define('_LOGIN_STYLES_', 'styles/login/');
+define('_SERVER_', 'http://localhost/bpsoft/');
 define('_STYLES_', 'styles/');
+define('_LOGIN_STYLES_', 'styles/login/');
 define('_VIEW_PATH_', 'app/view/');
+//Estilos Index
+define('_VIEW_PATH_INDEX_', 'styles/index/');
+define('_TITLE_', 'BP Soft');
+define('_ICON_', 'styles/pool.png');
 
 
 //Inicio de codigo de la api
 //Verificar existencia de los archivos
-$controlador = $_GET['c'] ?? "Login";
+if(isset($_GET['c'])){
+    $controlador = $_GET['c'];
+} else {
+    if(isset($_SESSION['role']) || isset($_COOKIE['role'])){
+        $controlador = $_GET['c'] ?? "Index";
+    } else {
+        $controlador = $_GET['c'] ?? "Login";
+    }
+}
+$controlador = trim(ucfirst($controlador));
 $accion = $_GET['a'] ?? "index";
 $function_action = $controlador . "|" . $accion;
 $archivo = 'app/controllers/' . $controlador . 'Controller.php';
@@ -61,58 +73,54 @@ if(file_exists($archivo)){
         $crypt = new Crypt();
         $role = $_COOKIE['role'] ?? $_SESSION['role'];
         $rol = $crypt->decrypt($_SESSION['role'], 'zxcvbnm');
-        $permisos = $controladores_acciones->readPermitscontroller($rol, $controlador);
-        foreach ($permisos as $permiso){
-            if($permiso->permit_controller == $controlador && $permiso->permit_action == $accion && $permiso->permit_status == 1){
-                $autorizado = true;
-                //echo "La funcion funciona xd";
-            }
-        }
-        //Verificar permisos
-        //Inicio
-        //(En esta parte se hará consultas sql para verificar los permisos del usuarios. Caso que no se encuentre su permiso, este será denegado
-        /*
-         * Paso 1: Obtener Rol Usuario
-         * Paso 2: Obtener lista de accesos por Rol
-         * Paso 3: Validar si puede realizar la accion invocada
-         * */
-        //Fin
-    } else {
-        $controlador = "Login";
-        $accion = "index";
-        $autorizado = true;
+        $view = $controlador . '/' . $accion;
+        $autorizado = $vistas->readViewrole($rol, $view);
 
+    } else {
+        $view = $controlador . '/' . $accion;
+        $autorizado = $vistas->readViewrole(1, $view);
     }
     //$autorizado =  true;
     if($autorizado){
         try{
             require $archivo;
-            $clase = sprintf('%sController', $_GET['c'] ?? 'Login');
+            $clase = sprintf('%sController', $_GET['c'] ?? $controlador);
             $accion = $_GET['a'] ?? "index";
             $clase = trim(ucfirst($clase));
             $accion = trim(strtolower($accion));
             $controller = new $clase;
             $controller->$accion();
         } catch (\Throwable $e){
-            /*require 'app/controllers/ErrorController.php';
+            require 'app/controllers/ErrorController.php';
             $clase = sprintf('%sController', 'Error');
-            $accion = 'error';
             $clase = trim(ucfirst($clase));
-            $accion = trim(strtolower($accion));
+            $accion = 'error';
             $controller = new $clase;
-            $controller->$accion();*/
-            echo $e->getMessage();
-            echo 'Solicitud erronea. Contacte con el administrador';
+            $controller->$accion();
+            //echo $e->getMessage();
+            //echo 'Solicitud erronea. Contacte con el administrador';
             $errores->insert($e->getMessage(), $function_action);
         }
     } else {
         //LLEGA AQUI SI SE TRATA DE ACCEDER A ACCION O FUNCION SIN PERMISOS
+        require 'app/controllers/LoginController.php';
+        $clase = sprintf('%sController', 'Login');
+        $clase = trim(ucfirst($clase));
+        $accion = 'index';
+        $controller = new $clase;
+        $controller->$accion();
         $errores->insert("SIN PERMISOS SUFICIENTES", $function_action);
-        echo 2;
+        //echo 'Estoy llegando aqui :/';
     }
 } else {
+    require 'app/controllers/ErrorController.php';
+    $clase = sprintf('%sController', 'Error');
+    $clase = trim(ucfirst($clase));
+    $accion = 'error';
+    $controller = new $clase;
+    $controller->$accion();
     //Acciones si el archivo no existe
     //Automaticamente, notificar error
     $errores->insert("ACCESO A CONTROLADOR NO EXISTENTE", $function_action);
-    echo 2;
+    //echo 2;
 }
