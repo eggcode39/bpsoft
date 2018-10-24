@@ -1,0 +1,35 @@
+2018-10-24 00:10:13[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:13[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:13[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:02[UTC -5] [ip] ::1 [location] Role|readPermits [text] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'on m.id_menu = rl.id_menu inner join optionmenu o on o.id_menu = m.id_menu where' at line 1
+2018-10-24 00:10:32[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:16[UTC -5] [ip] ::1 [location] Role|readPermits [text] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'on m.id_menu = rl.id_menu inner join optionmenu o on o.id_menu = m.id_menu where' at line 1
+2018-10-24 00:10:54[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 96[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-10-24 00:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:16[UTC -5] [ip] ::1 [location] Role|readPermits [text] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'on m.id_menu = rl.id_menu inner join optionmenu o on o.id_menu = m.id_menu where' at line 1
+2018-10-24 00:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 96[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-10-24 00:10:49[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:49[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:32[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:06[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Menu.php: 37[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-10-24 00:10:52[UTC -5] [ip] ::1 [location] Index|Permit [text] SIN PERMISOS SUFICIENTES
+2018-10-24 00:10:13[UTC -5] [ip] ::1 [location] Index|Permit [text] SIN PERMISOS SUFICIENTES
+2018-10-24 08:10:51[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 97[MESSAGGE]Undefined variable: atun
+
+2018-10-24 08:10:51[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 97[MESSAGGE]Undefined variable: atun
+
+2018-10-24 08:10:51[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 97[MESSAGGE]Undefined variable: atun
+

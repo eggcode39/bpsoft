@@ -12,14 +12,15 @@ date_default_timezone_set('America/Lima');
 //LLamada a archivo gestor de base de da+tos
 require 'core/Database.php';
 //Levantamiento del Log para registro de errores
-require "app/models/Log.php";
+require 'app/models/Log.php';
 //Levantamiento de registro de roles y permisos
-require_once "app/models/Menu.php";
+require 'app/models/Menu.php';
 $errores = new Log();
 $vistas = new Menu();
 
-//echo var_dump($permisos);
+$atun = 'atun con papas';
 
+//echo var_dump($permisos);
 //Inicio clase para la encriptacion de contenido
 require 'app/models/Crypt.php';
 
@@ -37,17 +38,8 @@ header("Content-Type: text/html;charset=utf-8");
 set_error_handler("exception_error_handler");
 session_start();
 
-// path
-// Definicion Variables Globales
-define('_SERVER_', 'http://localhost/bpsoft/');
-define('_STYLES_', 'styles/');
-define('_LOGIN_STYLES_', 'styles/login/');
-define('_VIEW_PATH_', 'app/view/');
-//Estilos Index
-define('_VIEW_PATH_INDEX_', 'styles/index/');
-define('_TITLE_', 'BP Soft');
-define('_ICON_', 'styles/pool.png');
-
+//Variables Globales
+require 'core/global.php';
 
 //Inicio de codigo de la api
 //Verificar existencia de los archivos
@@ -72,7 +64,7 @@ if(file_exists($archivo)){
     if(isset($_SESSION['role']) || isset($_COOKIE['role'])){
         $crypt = new Crypt();
         $role = $_COOKIE['role'] ?? $_SESSION['role'];
-        $rol = $crypt->decrypt($_SESSION['role'], 'zxcvbnm');
+        $rol = $crypt->decrypt($role, _PASS_);
         $view = $controlador . '/' . $accion;
         $autorizado = $vistas->readViewrole($rol, $view);
 

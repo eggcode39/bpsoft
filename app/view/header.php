@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title><?php echo _TITLE_;?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--Icono-->
+    <link rel="icon" href="<?php echo _SERVER_ . _ICON_;?>">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->

@@ -6,7 +6,6 @@
  * Time: 11:29
  */
 
-
 class Menu{
     private $pdo;
     private $log;
@@ -18,9 +17,24 @@ class Menu{
     public function listMenu($id_role){
         $result = [];
         try{
-            $sql = "Select m.menu_name, o.option_name, o.option_url from role r inner join rolemenu rl on r.id_role = rl.id_role inner join menu m on m.id_menu = rl.id_menu inner join optionmenu o on o.id_menu = m.id_menu where rl.id_role = ?";
+            $sql = "Select m.menu_name, m.menu_icon from role r inner join rolemenu rl on r.id_role = rl.id_role inner join menu m on m.id_menu = rl.id_menu where rl.id_role = ?";
             $stm = $this->pdo->prepare($sql);
             $stm->execute([$id_role]);
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Role|readPermits');
+            $result = 2;
+        }
+        return $result;
+
+    }
+
+    public function listMenuoption($menu){
+        $result = [];
+        try{
+            $sql = "Select o.option_name, o.option_url from menu m inner join optionmenu o on o.id_menu = m.id_menu where m.menu_name = ?";
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([$menu]);
             $result = $stm->fetchAll();
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'Role|readPermits');

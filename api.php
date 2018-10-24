@@ -37,10 +37,11 @@ header("Content-Type: text/html;charset=utf-8");
 //Especificar el manejo de errores personalizados
 set_error_handler("exception_error_handler");
 session_start();
-// path
+
+
 // Definicion Variables Globales
-define('SERVER', 'http://localhost/');
-define('_VIEW_PATH_', 'app/views/');
+require 'core/global.php';
+
 //Inicio de codigo de la api
 //Verificar existencia de los archivos
 $controlador = $_GET['c'] ?? "none";
@@ -55,7 +56,7 @@ if(file_exists($archivo)){
     if(isset($_SESSION['role']) || isset($_COOKIE['role'])){
         $crypt = new Crypt();
         $role = $_COOKIE['role'] ?? $_SESSION['role'];
-        $rol = $crypt->decrypt($_SESSION['role'], 'zxcvbnm');
+        $rol = $crypt->decrypt($role, _PASS_);
         $permisos = $controladores_acciones->readPermitscontroller($rol, $controlador);
         foreach ($permisos as $permiso){
             if($permiso->permit_controller == $controlador && $permiso->permit_action == $accion && $permiso->permit_status == 1){

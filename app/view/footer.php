@@ -1,9 +1,8 @@
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.8
+      <b>Version</b> <?php echo _VERSION_;?>
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-    reserved.
+    <strong>Copyright &copy; <?php echo date('Y');?> <a href="<?php echo _MYSITE_;?>" target="_blank">César José Ruiz</a>.</strong> Todos los derechos sin reservar.
   </footer>
 
   <!-- Control Sidebar -->

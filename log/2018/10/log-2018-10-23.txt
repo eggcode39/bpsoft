@@ -1,0 +1,178 @@
+2018-10-23 09:10:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 09:10:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 09:10:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 09:10:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 09:10:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 09:10:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 09:10:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 09:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 09:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 09:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 09:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 09:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 09:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 09:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:52[UTC -5] [ip] ::1 [location] Api|index [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-10-23 10:10:14[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:14[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:14[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:14[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 10:10:14[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 10:10:14[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 10:10:14[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 11:10:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 11:10:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 11:10:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 11:10:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 11:10:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 11:10:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 11:10:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-10-23 11:10:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-10-23 11:10:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-10-23 11:10:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-10-23 11:10:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-10-23 15:10:51[UTC -5] [ip] ::1 [location] Queso|index [text] ACCESO A CONTROLADOR NO EXISTENTE
