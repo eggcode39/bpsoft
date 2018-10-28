@@ -94,15 +94,29 @@ if(file_exists($archivo)){
             $errores->insert($e->getMessage(), $function_action);
         }
     } else {
-        //LLEGA AQUI SI SE TRATA DE ACCEDER A ACCION O FUNCION SIN PERMISOS
-        require 'app/controllers/LoginController.php';
-        $clase = sprintf('%sController', 'Login');
-        $clase = trim(ucfirst($clase));
-        $accion = 'index';
-        $controller = new $clase;
-        $controller->$accion();
-        $errores->insert("SIN PERMISOS SUFICIENTES", $function_action);
-        //echo 'Estoy llegando aqui :/';
+        if(isset($_SESSION['role']) || isset($_COOKIE['role'])){
+            //LLEGA AQUI SI SE TRATA DE ACCEDER A ACCION O FUNCION SIN PERMISOS
+            require 'app/controllers/ErrorController.php';
+            $clase = sprintf('%sController', 'Error');
+            $clase = trim(ucfirst($clase));
+            $accion = 'error';
+            $controller = new $clase;
+            $controller->$accion();
+            $errores->insert("SIN PERMISOS SUFICIENTES", $function_action);
+            //echo 'Estoy llegando aqui :/';
+
+        } else {
+            //LLEGA AQUI SI SE TRATA DE ACCEDER A ACCION O FUNCION SIN PERMISOS
+            require 'app/controllers/LoginController.php';
+            $clase = sprintf('%sController', 'Login');
+            $clase = trim(ucfirst($clase));
+            $accion = 'index';
+            $controller = new $clase;
+            $controller->$accion();
+            $errores->insert("SIN PERMISOS SUFICIENTES", $function_action);
+            //echo 'Estoy llegando aqui :/';
+        }
+
     }
 } else {
     require 'app/controllers/ErrorController.php';
