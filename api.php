@@ -23,7 +23,7 @@ $controladores_acciones = new Role();
 //Inicio clase para la encriptacion de contenido
 
 require 'app/models/Crypt.php';
-
+require 'app/models/Menu.php';
 // Errores de PHP a Try/Catch
 // Falta mejorar esta vaina porque puto el que lo lea
 function exception_error_handler($severidad, $mensaje, $fichero, $linea) {

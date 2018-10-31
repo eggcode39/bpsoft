@@ -32,7 +32,7 @@ class Menu{
     public function listMenuoption($menu){
         $result = [];
         try{
-            $sql = "Select o.option_name, o.option_url from menu m inner join optionmenu o on o.id_menu = m.id_menu where m.menu_name = ?";
+            $sql = "Select o.option_name, o.option_url from menu m inner join optionmenu o on o.id_menu = m.id_menu where m.menu_name = ? and o.option_show = 1";
             $stm = $this->pdo->prepare($sql);
             $stm->execute([$menu]);
             $result = $stm->fetchAll();

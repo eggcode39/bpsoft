@@ -17,6 +17,8 @@
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">-->
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>dist/css/AdminLTE.min.css">
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>css/propios.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>dist/css/skins/_all-skins.min.css">
@@ -32,5 +34,18 @@
   <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+    <!-- /.content-wrapper -->
+    <!-- jQuery 2.2.3 -->
+    <script src="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <!-- DataTables -->
+    <script src="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/datatables/dataTables.bootstrap.min.js"></script>
+
+    <!-- Alertify -->
+    <script src="<?php echo _SERVER_ .  _STYLES_;?>alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo _SERVER_ .  _STYLES_;?>alertifyjs/css/alertify.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo _SERVER_ .  _STYLES_;?>alertifyjs/css/themes/default.css">
 
 </head>

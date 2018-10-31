@@ -1,0 +1,1 @@
+2018-10-28 21:10:04[UTC -5] [ip] ::1 [location] Inventory|listProducts [text] SIN PERMISOS SUFICIENTES

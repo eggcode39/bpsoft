@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login V1</title>
+    <title>BPSoft - Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="<?php echo _SERVER_ . _LOGIN_STYLES_;?>images/icons/favicon.ico"/>
+    <link rel="icon" type="image/png" href="<?php echo _SERVER_;?>styles/pool.png"/>
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="<?php echo _SERVER_ . _LOGIN_STYLES_;?>vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->

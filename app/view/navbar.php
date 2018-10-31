@@ -42,7 +42,7 @@
                   <a href="#" class="btn btn-default btn-flat">Configurar</a>
                 </div>
                 <div class="pull-right">
-                  <a href="api/Login/singOut" class="btn btn-default btn-flat">Cerrar Sesion</a>
+                  <a href="<?php echo _SERVER_;?>api/Login/singOut" class="btn btn-default btn-flat">Cerrar Sesion</a>
                 </div>
               </li>
             </ul>

@@ -1,0 +1,26 @@
+2018-10-30 00:10:52[UTC -5] [ip] ::1 [location] Inventory|Inventory [text] SIN PERMISOS SUFICIENTES
+2018-10-30 00:10:02[UTC -5] [ip] ::1 [location] Inventory|Inventory [text] SIN PERMISOS SUFICIENTES
+2018-10-30 00:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\listproducts.php: 44[MESSAGGE]Undefined variable: products
+
+2018-10-30 00:10:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\inventory\listproducts.php: 44[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-10-30 00:10:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\listproducts.php: 44[MESSAGGE]Undefined variable: products
+
+2018-10-30 00:10:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\inventory\listproducts.php: 44[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-10-30 22:10:35[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\add.php: 115[MESSAGGE]Array to string conversion
+
+2018-10-30 22:10:35[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\add.php: 120[MESSAGGE]Array to string conversion
+
+2018-10-30 23:10:20[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\add.php: 115[MESSAGGE]Array to string conversion
+
+2018-10-30 23:10:20[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\add.php: 120[MESSAGGE]Array to string conversion
+
+2018-10-30 23:10:11[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\add.php: 120[MESSAGGE]Array to string conversion
+
+2018-10-30 23:10:17[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\add.php: 120[MESSAGGE]Array to string conversion
+
+2018-10-30 23:10:27[UTC -5] [ip] ::1 [location] Inventory|saveProduct [text] Class 'Menu' not found
+2018-10-30 23:10:27[UTC -5] [ip] ::1 [location] Inventory|saveProduct [text] Class 'Menu' not found
+2018-10-30 23:10:52[UTC -5] [ip] ::1 [location] Inventory|ArrayInventory [text] SIN PERMISOS SUFICIENTES
+2018-10-30 23:10:35[UTC -5] [ip] ::1 [location] Inventory|listProducts [text] SIN PERMISOS SUFICIENTES
