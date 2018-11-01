@@ -1,0 +1,72 @@
+2018-10-31 07:10:57[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\InventoryController.php: 40[MESSAGGE]Undefined index: id
+
+2018-10-31 07:10:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\InventoryController.php: 40[MESSAGGE]Undefined index: id
+
+2018-10-31 07:10:22[UTC -5] [ip] ::1 [location] Inventory|listProduct [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-10-31 07:10:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 41[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 07:10:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 45[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 07:10:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 49[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 07:10:11[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 80[MESSAGGE]PDOStatement::execute() expects parameter 1 to be array, string given
+
+2018-10-31 07:10:11[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 41[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 07:10:11[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 45[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 07:10:11[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 49[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 07:10:56[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 80[MESSAGGE]PDOStatement::execute() expects parameter 1 to be array, string given
+
+2018-10-31 07:10:44[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 41[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 07:10:44[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 45[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 07:10:44[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\edit.php: 49[MESSAGGE]Trying to get property of non-object
+
+2018-10-31 09:10:54[UTC -5] [ip] ::1 [location] Inventory|productForsale [text] SIN PERMISOS SUFICIENTES
+2018-10-31 09:10:53[UTC -5] [ip] ::1 [location] Inventory|productForsale [text] SIN PERMISOS SUFICIENTES
+2018-10-31 09:10:41[UTC -5] [ip] ::1 [location] Inventory|productForsale [text] Call to undefined method InventoryController::productforsale()
+2018-10-31 09:10:44[UTC -5] [ip] ::1 [location] Inventory|productForsale [text] Call to undefined method InventoryController::productforsale()
+2018-10-31 09:10:28[UTC -5] [ip] ::1 [location] Inventory|productForsale [text] Call to undefined method InventoryController::productforsale()
+2018-10-31 09:10:38[UTC -5] [ip] ::1 [location] Inventory|productForsale [text] SIN PERMISOS SUFICIENTES
+2018-10-31 10:10:49[UTC -5] [ip] ::1 [location] Inventory|addProductforsale [text] SIN PERMISOS SUFICIENTES
+2018-10-31 10:10:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\listproductsale.php: 52[MESSAGGE]Undefined variable: products
+
+2018-10-31 10:10:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\inventory\listproductsale.php: 52[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-10-31 14:10:19[UTC -5] [ip] ::1 [location] Inventory|saveProductprice [text] SIN PERMISOS SUFICIENTES
+2018-10-31 14:10:28[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 58[MESSAGGE]Undefined property: Inventory::$product_name
+
+2018-10-31 14:10:28[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 59[MESSAGGE]Undefined property: Inventory::$product_description
+
+2018-10-31 14:10:28[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 60[MESSAGGE]Undefined property: Inventory::$product_stock
+
+2018-10-31 14:10:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 158[MESSAGGE]Undefined property: Inventory::$id_productforsale
+
+2018-10-31 14:10:52[UTC -5] [ip] ::1 [location] Inventory|editProductforsale [text] SIN PERMISOS SUFICIENTES
+2018-10-31 15:10:12[UTC -5] [ip] ::1 [location] Inventory|deleteProductprice [text] SIN PERMISOS SUFICIENTES
+2018-10-31 15:10:48[UTC -5] [ip] ::1 [location] Inventory|deleteProductprice [text] SIN PERMISOS SUFICIENTES
+2018-10-31 15:10:51[UTC -5] [ip] ::1 [location] Inventory|deleteProductprice [text] SIN PERMISOS SUFICIENTES
+2018-10-31 18:10:20[UTC -5] [ip] ::1 [location] Inventory|listRent [text] Call to undefined method InventoryController::listrent()
+2018-10-31 19:10:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 225[MESSAGGE]Undefined property: Inventory::$rent_descripcion
+
+2018-10-31 19:10:55[UTC -5] [ip] ::1 [location] Inventory|saveRent [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'rent_descripcion' cannot be null
+2018-10-31 19:10:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 225[MESSAGGE]Undefined property: Inventory::$rent_descripcion
+
+2018-10-31 19:10:15[UTC -5] [ip] ::1 [location] Inventory|saveRent [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'rent_descripcion' cannot be null
+2018-10-31 19:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 43[MESSAGGE]Undefined property: Inventory::$product_name
+
+2018-10-31 19:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 44[MESSAGGE]Undefined property: Inventory::$product_description
+
+2018-10-31 19:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Inventory.php: 45[MESSAGGE]Undefined property: Inventory::$product_stock
+
+2018-10-31 19:10:42[UTC -5] [ip] ::1 [location] Inventory|save [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_name' cannot be null
+2018-10-31 19:10:43[UTC -5] [ip] ::1 [location] Inventory|deleteRent [text] SIN PERMISOS SUFICIENTES
+2018-10-31 19:10:16[UTC -5] [ip] ::1 [location] Inventory|deleteRent [text] SIN PERMISOS SUFICIENTES
+2018-10-31 22:10:55[UTC -5] [ip] ::1 [location] Inventory|listObjects [text] SIN PERMISOS SUFICIENTES
+2018-10-31 23:10:57[UTC -5] [ip] ::1 [location] Inventory|saveRent [text] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'object_name_name' in 'field list'
+2018-10-31 23:10:55[UTC -5] [ip] ::1 [location] Inventory|listObjects [text] SIN PERMISOS SUFICIENTES
+2018-10-31 23:10:30[UTC -5] [ip] ::1 [location] Inventory|deleteObject [text] SIN PERMISOS SUFICIENTES
+2018-10-31 23:10:48[UTC -5] [ip] ::1 [location] Permit|add [text] Call to undefined method PermitController::add()

@@ -94,7 +94,7 @@
                     <?php
                     $opciones = $this->menu->listMenuoption($nav->menu_name);
                     foreach ($opciones as $opcion){
-                        ?><li><a href="<?php echo $opcion->option_url;?>"><i class="fa fa-circle-o"></i><?php echo $opcion->option_name;?></a></li><?php
+                        ?><li><a href="<?php echo _SERVER_ . $opcion->option_url;?>"><i class="fa fa-circle-o"></i><?php echo $opcion->option_name;?></a></li><?php
                     }
                     ?>
                 </ul>
