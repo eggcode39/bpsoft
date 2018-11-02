@@ -17,7 +17,7 @@
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Inventario</a></li>
             <li><a href="#">Agregar Precio Venta</a></li>
-            <a class="btn btn-chico btn-default btn-xs" href="<?php echo _SERVER_;?>Inventory/productForsale/<?php echo $idp;?>" >Volver</a>
+            <a class="btn btn-chico btn-default btn-xs" href="<?php echo _SERVER_;?>Inventory/productForsale/<?php echo $product->id_product;?>" >Volver</a>
         </ol>
     </section>
 
@@ -100,7 +100,7 @@
                 success:function (r) {
                     if(r==1){
                         alertify.success("Se envió chevere");
-                        location.href = '<?php echo _SERVER_;?>Inventory/productForsale/<?php echo $idp;?>';
+                        location.href = '<?php echo _SERVER_;?>Inventory/productForsale/<?php echo $product->id_product;?>';
                     } else {
                         alertify.error("Fallo el envio");
                     }

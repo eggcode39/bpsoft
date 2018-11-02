@@ -1,0 +1,14 @@
+2018-11-02 00:11:23[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\Log.php: 28[MESSAGGE]mkdir(): File exists
+
+2018-11-02 00:11:23[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\Log.php: 29[MESSAGGE]mkdir(): File exists
+
+2018-11-02 00:11:23[UTC -5] [ip] ::1 [location] Inventory|productForsale [text] SIN PERMISOS SUFICIENTES
+2018-11-02 00:11:08[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\addstock.php: 44[MESSAGGE]Undefined property: stdClass::$product_stock
+
+2018-11-02 00:11:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\addstock.php: 44[MESSAGGE]Undefined property: stdClass::$product_stock
+
+2018-11-02 00:11:14[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\addstock.php: 44[MESSAGGE]Undefined property: stdClass::$product_stock
+
+2018-11-02 00:11:03[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\inventory\addstock.php: 44[MESSAGGE]Undefined property: stdClass::$product_stock
+
+2018-11-02 00:11:52[UTC -5] [ip] ::1 [location] Inventory|saveProductstock [text] SIN PERMISOS SUFICIENTES

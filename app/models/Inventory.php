@@ -364,4 +364,31 @@ class Inventory{
         return $result;
     }
 
+    public function saveProductstock($stock, $id){
+        try {
+            $sql = 'update product set product_stock = product_stock + ? where id_product = ?';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([
+                $stock,
+                $id
+            ]);
+            $fechahora = date("Y-m-d H:m:s");
+
+            $sql2 = 'insert into stocklog (id_product, stocklog_added, stocklog_date) values (?,?,?)';
+            $stm2 = $this->pdo->prepare($sql2);
+            $stm2->execute([
+                $id,
+                $stock,
+                $fechahora
+            ]);
+            $result = 1;
+        } catch (Exception $e){
+            //throw new Exception($e->getMessage());
+            $this->log->insert($e->getMessage(), 'Inventory|saveProductstock');
+            $result = 2;
+        }
+
+        return $result;
+    }
+
 }

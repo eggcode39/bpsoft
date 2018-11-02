@@ -55,7 +55,7 @@
                             <td><?php echo $product->id_productforsale;?></td>
                             <td><?php echo $product->product_name;?></td>
                             <td><?php echo $product->product_unid;?></td>
-                            <td><?php echo $product->product_price;?></td>
+                            <td>S/. <?php echo $product->product_price;?></td>
                             <td><a class="btn btn-chico btn-warning btn-xs" type="button" href="<?php echo _SERVER_;?>Inventory/editProductforsale/<?php echo $product->id_productforsale;?>">Editar</a><a class="btn btn-chico btn-danger btn-xs" onclick="preguntarSiNo(<?php echo $product->id_productforsale;?>)">Eliminar</a></td>
                         </tr>
                         <?php

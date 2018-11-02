@@ -2,18 +2,17 @@
 /**
  * Created by PhpStorm.
  * User: CesarJose39
- * Date: 31/10/2018
- * Time: 7:44
- */
-?>
+ * Date: 02/11/2018
+ * Time: 0:36
+ */?>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-Inventario
-            <small>Editar Producto</small>
+            Inventario
+            <small>Agregar Producto Stock</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Inventario</a></li>
@@ -38,21 +37,21 @@ Inventario
                         <div class="box-body">
                             <div class="form-group">
                                 <label >Nombre Producto</label>
-                                <input type="text" class="form-control" id="product_name" placeholder="Ingresar Nombre Producto..." value="<?php echo $product->product_name;?>">
+                                <input type="text" class="form-control" id="product_name" placeholder="Ingresar Nombre Producto..." value="<?php echo $product->product_name;?>" readonly>
                             </div>
                             <div class="form-group">
-                                <label >Descripcion Producto</label>
-                                <input type="text" class="form-control" id="product_description" placeholder="Ingresar Descripción Producto..." value="<?php echo $product->product_description;?>">
+                                <label >Stock Actual</label>
+                                <input type="text" class="form-control" id="product_stockactual"  value="<?php echo $product->product_stock;?>" readonly>
                             </div>
                             <div class="form-group">
-                                <label >Stock Producto</label>
-                                <input type="text" class="form-control" id="product_stock" placeholder="Ingresar Stock Producto..." value="<?php echo $product->product_stock;?>" readonly>
+                                <label >Stock A Agregar</label>
+                                <input type="text" class="form-control" id="product_stock" placeholder="Ingresar Stock Producto..." value="0" >
                             </div>
                         </div>
                         <!-- /.box-body -->
 
                         <div class="box-footer">
-                            <button class="btn btn-primary" onclick="edit()">Editar Producto</button>
+                            <button class="btn btn-primary" onclick="edit()">Agregar Stock</button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +71,6 @@ Inventario
         var valor = "correcto";
         var id_product = <?php echo $product->id_product;?>;
         var product_name = $('#product_name').val();
-        var product_description = $('#product_description').val();
         var product_stock = $('#product_stock').val();
 
         if(product_name == ""){
@@ -91,13 +89,6 @@ Inventario
             $('#product_name').css('border','');
         }
 
-        if(product_description == ""){
-            alertify.error('El campo Description Producto está vacío');
-            $('#product_description').css('border','solid red');
-            valor = "incorrecto";
-        } else {
-            $('#product_description').css('border','');
-        }
 
         if(product_stock == ""){
             alertify.error('El campo Stock Producto está vacío');
@@ -109,21 +100,19 @@ Inventario
 
         if (valor == "correcto"){
             var cadena = "id_product=" + id_product +
-                "&product_name=" + product_name +
-                "&product_description=" + product_description +
                 "&product_stock=" + product_stock;
             $.ajax({
                 type:"POST",
-                url:"<?php echo _SERVER_;?>api/Inventory/saveProduct",
+                url:"<?php echo _SERVER_;?>api/Inventory/saveProductstock",
                 data: cadena,
                 success:function (r) {
-                if(r==1){
-                    alertify.success("Se envió chevere");
-                    location.href = '<?php echo _SERVER_;?>Inventory/listProducts';
-                } else {
-                    alertify.error("Fallo el envio");
+                    if(r==1){
+                        alertify.success("Se envió chevere");
+                        location.href = '<?php echo _SERVER_;?>Inventory/listProducts';
+                    } else {
+                        alertify.error("Fallo el envio");
+                    }
                 }
-            }
             });
         }
 
