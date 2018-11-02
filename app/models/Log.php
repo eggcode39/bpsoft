@@ -14,7 +14,7 @@ class Log{
         $this->pathfull = $this->path  . "/" . date("m") ;
         $this->filename = "log-";
         $this->date     = date("Y-m-d");
-        $this->hour     = date('H:m:s');
+        $this->hour     = date('H:i:s');
         $this->ip       = ($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : 0;
     }
 

@@ -372,7 +372,7 @@ class Inventory{
                 $stock,
                 $id
             ]);
-            $fechahora = date("Y-m-d H:m:s");
+            $fechahora = date("Y-m-d H:i:s");
 
             $sql2 = 'insert into stocklog (id_product, stocklog_added, stocklog_date) values (?,?,?)';
             $stm2 = $this->pdo->prepare($sql2);
