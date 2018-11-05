@@ -5,22 +5,29 @@
  * Date: 05/11/2018
  * Time: 9:29
  */
-
+require 'app/models/Person.php';
 require 'app/models/Sell.php';
+require 'app/models/Inventory.php';
 class SellController{
     private $crypt;
     private $menu;
     private $log;
+    private $inventory;
+    private $person;
     public function __construct()
     {
         $this->crypt = new Crypt();
         $this->menu = new Menu();
         $this->log = new Log();
+        $this->inventory = new Inventory();
+        $this->person = new Person();
     }
 
     //Vistas
     public function fastSell(){
         $navs = $this->menu->listMenu($this->crypt->decrypt($_COOKIE['role'],_PASS_) ?? $this->crypt->decrypt($_SESSION['role'],_PASS_));
+        $products = $this->inventory->listProducts();
+        $people = $this->person->list();
         require _VIEW_PATH_ . 'header.php';
         require _VIEW_PATH_ . 'navbar.php';
         require _VIEW_PATH_ . 'sell/sell.php';

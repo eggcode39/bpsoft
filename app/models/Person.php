@@ -52,14 +52,14 @@ class Person{
         }
         return $result;
     }
-    public function readAll(){
+    public function list(){
         $result = [];
         try {
-            $sql = 'call s_s_readAll_person()';
+            $sql = 'list * from person';
             $stm = $this->pdo->prepare($sql);
             $result = $stm->execute();
         } catch (Exception $e){
-            $this->log->insert($e->getMessage(), 'Person|readAll');
+            $this->log->insert($e->getMessage(), 'Person|list');
             $result = 2;
         }
         return $result;

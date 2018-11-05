@@ -49,8 +49,7 @@ class LoginController{
                 setcookie('user_last_login', $this->crypt->encrypt($singin[0]->user_last_login, _PASS_), time() + 30 * 24 * 60 * 60, "/");
                 setcookie('person_name', $this->crypt->encrypt($singin[0]->person_name, _PASS_), time() + 30 * 24 * 60 * 60, "/");
                 setcookie('person_surname', $this->crypt->encrypt($singin[0]->person_surname, _PASS_), time() + 30 * 24 * 60 * 60, "/");
-                setcookie('person_coord_x', $this->crypt->encrypt($singin[0]->person_coord_x, _PASS_), time() + 30 * 24 * 60 * 60, "/");
-                setcookie('person_coord_y', $this->crypt->encrypt($singin[0]->person_coord_y, _PASS_), time() + 30 * 24 * 60 * 60, "/");
+                setcookie('person_dni', $this->crypt->encrypt($singin[0]->person_dni, _PASS_), time() + 30 * 24 * 60 * 60, "/");
                 setcookie('person_genre', $this->crypt->encrypt($singin[0]->person_genre, _PASS_), time() + 30 * 24 * 60 * 60, "/");
                 setcookie("role", $this->crypt->encrypt($singin[0]->id_role, _PASS_), time() + 30* 24 * 60 * 60,"/");
                 setcookie("role_name", $this->crypt->encrypt($singin[0]->role_name, _PASS_), time() + 30* 24 * 60 * 60, "/");
@@ -63,6 +62,7 @@ class LoginController{
                 $_SESSION['user_last_login'] = $this->crypt->encrypt($singin[0]->user_last_login, _PASS_);
                 $_SESSION['person_name'] = $this->crypt->encrypt($singin[0]->person_name, _PASS_);
                 $_SESSION['person_surname'] = $this->crypt->encrypt($singin[0]->person_surname, _PASS_);
+                $_SESSION['person_dni'] = $this->crypt->encrypt($singin[0]->person_surname, _PASS_);
                 $_SESSION['person_coord_x'] = $this->crypt->encrypt($singin[0]->person_coord_x, _PASS_);
                 $_SESSION['person_coord_y'] = $this->crypt->encrypt($singin[0]->person_coord_y, _PASS_);
                 $_SESSION['person_genre'] = $this->crypt->encrypt($singin[0]->person_genre, _PASS_);
@@ -88,8 +88,7 @@ class LoginController{
             unset($_SESSION['user_last_login']);
             unset($_SESSION['person_name']);
             unset($_SESSION['person_surname']);
-            unset($_SESSION['person_coord_x']);
-            unset($_SESSION['person_coord_y']);
+            unset($_SESSION['person_dni']);
             unset($_SESSION['person_genre']);
             unset($_SESSION['role']);
             unset($_SESSION['role_name']);
@@ -103,8 +102,7 @@ class LoginController{
             setcookie('user_last_login', '1', time() - 365 * 24 * 60 * 60, "/");
             setcookie('person_name', '1', time() - 365 * 24 * 60 * 60, "/");
             setcookie('person_surname', '1', time() - 365 * 24 * 60 * 60, "/");
-            setcookie('person_coord_x', '1', time() - 365 * 24 * 60 * 60, "/");
-            setcookie('person_coord_y', '1', time() - 365 * 24 * 60 * 60, "/");
+            setcookie('person_dni', '1', time() - 365 * 24 * 60 * 60, "/");
             setcookie('person_genre', '1', time() - 365 * 24 * 60 * 60, "/");
             setcookie('person_role', '1', time() - 365 * 24 * 60 * 60, "/");
             setcookie("role", '1', time() - 365 * 30 * 24 * 60 * 60, "/");
