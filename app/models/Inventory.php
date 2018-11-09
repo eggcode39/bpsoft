@@ -182,6 +182,20 @@ class Inventory{
 
         return $result;
     }
+    //Listar Datos Precio Productos
+    public function listProductprices(){
+        try{
+            $sql = "Select * from productforsale pr inner join product p on pr.id_product = p.id_product";
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Inventory|listProductprices');
+            $result = 2;
+        }
+
+        return $result;
+    }
     //Eliminar Precio Producto Registrado
     public function deleteProductprice($id){
         try{
@@ -364,6 +378,7 @@ class Inventory{
         return $result;
     }
 
+    //Actualizar Stock
     public function saveProductstock($stock, $id){
         try {
             $sql = 'update product set product_stock = product_stock + ? where id_product = ?';

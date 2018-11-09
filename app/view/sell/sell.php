@@ -27,27 +27,34 @@
         <!-- Main row -->
         <div class="row">
             <div class="col-xs-12">
-                <center><h2>VENTA DE PRODUCTOS</h2></center>
+                <center><h2>VENTA RÁPIDA DE PRODUCTOS</h2></center>
             </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-xs-12">
-                <center><h2>ggg</h2></center>
+            <div class="col-xs-6">
+                <label style="font-size: 22px;padding-right: 10px;">Cliente a Vender: </label>
+                <input style="font-size: 22px;padding-left: 8px;width: 450px;" type="text" value="0000000 - Anonymus Young" id="name_person" readonly>
+                <input type="text" id="id_persona" style="display: none" value="2">
+            </div>
+            <div class="col-xs-6">
+                <label style="font-size: 22px"> Cantidad del Producto a Vender: </label>
+                <input  style="font-size: 22px;width: 65px;padding-left: 10px;" type="number" value="1" id="product_sale">
             </div>
         </div>
         <br>
         <!-- /.row (main row) -->
         <div class="row">
             <div class="col-lg-8">
+                <center><h2>Productos</h2></center>
                 <table id="example2" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th>ID Interno</th>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
+                        <th>Producto</th>
                         <th>Stock</th>
-                        <th>Acción</th>
+                        <th>Tipo de Venta</th>
+                        <th>Precio</th>
+                        <th style="width: 250px">Acción</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -55,11 +62,11 @@
                     foreach ($products as $product){
                         ?>
                         <tr>
-                            <td><?php echo $product->id_product;?></td>
-                            <td><?php echo $product->product_name;?></td>
-                            <td><?php echo $product->product_description;?></td>
-                            <td><?php echo $product->product_stock;?></td>
-                            <td><a class="btn btn-chico btn-warning btn-xs" type="button" href="<?php echo _SERVER_;?>Inventory/editProduct/<?php echo $product->id_product;?>">Editar</a><a class="btn btn-chico btn-danger btn-xs" onclick="preguntarSiNo(<?php echo $product->id_product;?>)">Eliminar</a><a class="btn btn-dropbox btn-xs" href="<?php echo _SERVER_;?>Inventory/productForsale/<?php echo $product->id_product;?>">Ver Costo Venta</a><a class="btn btn-info btn-xs" href="<?php echo _SERVER_;?>Inventory/addProductstock/<?php echo $product->id_product;?>">Agregar Stock</a></td>
+                            <td class="texto-venta"><?php echo $product->product_name;?></td>
+                            <td class="texto-venta"><?php echo $product->product_stock;?></td>
+                            <td class="texto-venta">Venta por <?php echo $product->product_unid;?></td>
+                            <td class="texto-venta">S/. <?php echo $product->product_price;?></td>
+                            <td><a class="btn btn-grande btn-success btn-xs" type="button" onclick="preguntarSiNo(<?php echo $product->id_productforsale;?>, '<?php echo $product->product_name;?>',<?php echo $product->product_stock?>,<?php echo $product->product_price;?>,<?php echo $product->product_unid;?>)">Venta Rapida</a></td>
                         </tr>
                         <?php
                     }
@@ -67,35 +74,36 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th>ID Interno</th>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
+                        <th>Producto</th>
                         <th>Stock</th>
-                        <th>Acción</th>
+                        <th>Tipo de Venta</th>
+                        <th>Precio</th>
+                        <th style="width: 250px">Acción</th>
                     </tr>
                     </tfoot>
                 </table>
             </div>
             <div class="col-lg-4">
-                <table id="example2" class="table table-bordered table-hover">
+                <center><h2>Clientes</h2></center>
+                <table id="example3" class="table table-bordered table-hover">
                     <thead>
                     <tr>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Stock</th>
+                        <th>DNI</th>
                         <th>Acción</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php
                     foreach ($people as $person){
+                        $espacio = ' ';
                         ?>
                         <tr>
-                            <td><?php echo $product->id_product;?></td>
-                            <td><?php echo $product->product_name;?></td>
-                            <td><?php echo $product->product_description;?></td>
-                            <td><?php echo $product->product_stock;?></td>
-                            <td><a class="btn btn-chico btn-warning btn-xs" type="button" href="<?php echo _SERVER_;?>Inventory/editProduct/<?php echo $product->id_product;?>">Editar</a><a class="btn btn-chico btn-danger btn-xs" onclick="preguntarSiNo(<?php echo $product->id_product;?>)">Eliminar</a><a class="btn btn-dropbox btn-xs" href="<?php echo _SERVER_;?>Inventory/productForsale/<?php echo $product->id_product;?>">Ver Costo Venta</a><a class="btn btn-info btn-xs" href="<?php echo _SERVER_;?>Inventory/addProductstock/<?php echo $product->id_product;?>">Agregar Stock</a></td>
+                            <td><?php echo $person->person_name;?></td>
+                            <td><?php echo $person->person_surname;?></td>
+                            <td><?php echo $person->person_dni;?></td>
+                            <td><a class="btn btn-chico btn-warning btn-xs" type="button" onclick="agregarPersona('<?php echo $person->person_name . $espacio . $person->person_surname;?>', '<?php echo $person->person_dni;?>', <?php echo $person->id_person;?>)">Agregar</a></td>
                         </tr>
                         <?php
                     }
@@ -103,10 +111,9 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th>ID Interno</th>
                         <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Stock</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
                         <th>Acción</th>
                     </tr>
                     </tfoot>
@@ -119,28 +126,48 @@
 </div>
 
 <script>
+    var id_person = $("#id_persona").val();
+    var nameperson = 'Anonymus';
     $(function () {
         $("#example2").DataTable();
+        $("#example3").DataTable();
     });
 
-    function preguntarSiNo(id){
-        alertify.confirm('Eliminar Datos', '¿Esta seguro de eliminar este producto?',
-            function(){ eliminar(id) }
-            , function(){ alertify.error('Operacion Cancelada')});
+    function agregarPersona(nombres, dni, id) {
+        $("#name_person").val(dni + ' - ' + nombres);
+        $("#id_persona").val(id);
+        id_person = id;
+        nameperson = nombres;
     }
 
-    function eliminar(id){
-        var cadena = "id=" + id;
+    function preguntarSiNo(id_product,nameproduct,stock_general,price,unidforsale){
+        var unid_sale = $("#product_sale").val();
+        var id_persona = id_person;
+        var totalprice = price * unid_sale;
+        var unid_to_sale = unidforsale * unid_sale;
+        if(stock_general >= unid_to_sale){
+            alertify.confirm('Realizar Venta', '¿Esta seguro que desea vender ' + unid_sale +' unidades de ' + nameproduct +' a ' + nameperson + ' por S./ ' + price +' soles? Precio a Cobrar: S/. ' + totalprice + ' soles.',
+                function(){ vender(id_product, id_persona, unid_sale, totalprice) }
+                , function(){ alertify.error('Operacion Cancelada')});
+        } else {
+            alertify.error('ERROR: STOCK INSUFICIENTE');
+        }
+    }
+
+    function vender(id_productforsale, id_person, stocksale){
+        var cadena = "id_productforsale=" + id_productforsale +
+                    "&id_person=" + id_person +
+                    "&stocksale=" + stocksale;
         $.ajax({
             type:"POST",
-            url: "<?php echo _SERVER_;?>api/Inventory/deleteProduct",
+            url: "<?php echo _SERVER_;?>api/Sell/sellProduct",
             data : cadena,
             success:function (r) {
                 if(r==1){
-                    alertify.success('Producto Eliminado');
+                    alertify.success('Venta Realizada');
                     location.reload();
                 } else {
-                    alertify.error('No se pudo realizar');
+                    alertify.error('No se pudo llevar acabo la venta');
                 }
             }
         });

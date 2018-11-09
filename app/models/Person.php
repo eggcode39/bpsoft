@@ -55,9 +55,10 @@ class Person{
     public function list(){
         $result = [];
         try {
-            $sql = 'list * from person';
+            $sql = 'select * from person';
             $stm = $this->pdo->prepare($sql);
-            $result = $stm->execute();
+            $stm->execute();
+            $result = $stm->fetchAll();
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'Person|list');
             $result = 2;

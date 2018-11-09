@@ -63,8 +63,6 @@ class LoginController{
                 $_SESSION['person_name'] = $this->crypt->encrypt($singin[0]->person_name, _PASS_);
                 $_SESSION['person_surname'] = $this->crypt->encrypt($singin[0]->person_surname, _PASS_);
                 $_SESSION['person_dni'] = $this->crypt->encrypt($singin[0]->person_surname, _PASS_);
-                $_SESSION['person_coord_x'] = $this->crypt->encrypt($singin[0]->person_coord_x, _PASS_);
-                $_SESSION['person_coord_y'] = $this->crypt->encrypt($singin[0]->person_coord_y, _PASS_);
                 $_SESSION['person_genre'] = $this->crypt->encrypt($singin[0]->person_genre, _PASS_);
                 $_SESSION['role'] = $this->crypt->encrypt($singin[0]->id_role, _PASS_);
                 $_SESSION['role_name'] = $this->crypt->encrypt($singin[0]->role_name, _PASS_);
@@ -104,7 +102,6 @@ class LoginController{
             setcookie('person_surname', '1', time() - 365 * 24 * 60 * 60, "/");
             setcookie('person_dni', '1', time() - 365 * 24 * 60 * 60, "/");
             setcookie('person_genre', '1', time() - 365 * 24 * 60 * 60, "/");
-            setcookie('person_role', '1', time() - 365 * 24 * 60 * 60, "/");
             setcookie("role", '1', time() - 365 * 30 * 24 * 60 * 60, "/");
             setcookie("role_name", '1', time() - 365 * 24 * 60 * 60, "/");
             $okey = 1;

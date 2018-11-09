@@ -1,3 +1,12 @@
 .btn-chico{
     width: 80px;
 }
+
+.btn-grande{
+    width: 200px;
+    font-size: 20px;
+}
+
+.texto-venta{
+    font-size: 20px;
+}

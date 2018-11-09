@@ -34,7 +34,7 @@
                     <tr>
                         <th>ID Interno</th>
                         <th>Nombre</th>
-                        <th>Descripción</th>
+                        <th>Descripción Producto</th>
                         <th>Stock</th>
                         <th>Acción</th>
                     </tr>
