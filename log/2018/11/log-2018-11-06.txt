@@ -1,0 +1,157 @@
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:40:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 58[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:42:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-06 08:53:15[UTC -5] [ip] ::1 [location] Inventory|listProduct [text] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`gestionbillarbd`.`productforsale`, CONSTRAINT `productforsale_ibfk_1` FOREIGN KEY (`id_product`) REFERENCES `product` (`id_product`))
+2018-11-06 13:05:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 13:05:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 17:50:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 17:50:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 17:50:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 17:50:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 17:50:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 17:50:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 17:50:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 69[MESSAGGE]Undefined property: stdClass::$product_unit
+
+2018-11-06 18:36:40[UTC -5] [ip] ::1 [location] Api|Sell [text] ACCESO A CONTROLADOR NO EXISTENTE
+2018-11-06 18:47:05[UTC -5] [ip] ::1 [location] Api|Sell [text] ACCESO A CONTROLADOR NO EXISTENTE

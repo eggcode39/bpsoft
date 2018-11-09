@@ -1,0 +1,15 @@
+2018-11-08 01:43:34[UTC -5] [ip] ::1 [location] Sell|insertSale [text] SQLSTATE[HY000]: General error
+2018-11-08 01:43:34[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 61[MESSAGGE]Trying to get property of non-object
+
+2018-11-08 01:43:34[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 61[MESSAGGE]Undefined property: stdClass::$product_name
+
+2018-11-08 01:43:34[UTC -5] [ip] ::1 [location] Sell|insertSaledetail [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_saleproduct' cannot be null
+2018-11-08 01:44:16[UTC -5] [ip] ::1 [location] Sell|insertSale [text] SQLSTATE[HY000]: General error
+2018-11-08 01:44:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 61[MESSAGGE]Trying to get property of non-object
+
+2018-11-08 01:44:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 61[MESSAGGE]Undefined property: stdClass::$product_name
+
+2018-11-08 01:44:16[UTC -5] [ip] ::1 [location] Sell|insertSaledetail [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_saleproduct' cannot be null
+2018-11-08 01:46:06[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 61[MESSAGGE]Undefined property: stdClass::$product_name
+
+2018-11-08 01:45:56[UTC -5] [ip] ::1 [location] Sell|insertSaledetail [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'sale_productname' cannot be null

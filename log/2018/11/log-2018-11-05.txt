@@ -1,0 +1,111 @@
+2018-11-05 09:59:00[UTC -5] [ip] ::1 [location] Sell|fastSell [text] Class 'Inventory' not found
+2018-11-05 10:55:11[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 66[MESSAGGE]Undefined property: stdClass::$person_coord_x
+
+2018-11-05 10:55:11[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 67[MESSAGGE]Undefined property: stdClass::$person_coord_y
+
+2018-11-05 10:55:15[UTC -5] [ip] ::1 [location] Person|list [text] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'list * from person' at line 1
+2018-11-05 10:55:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 91[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\IndexController.php: 19[MESSAGGE]Undefined index: role
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:05:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\admin\index.php: 57[MESSAGGE]Undefined index: role_name
+
+2018-11-05 12:05:32[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 28[MESSAGGE]Undefined index: role
+
+2018-11-05 12:05:32[UTC -5] [ip] ::1 [location] Person|list [text] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'list * from person' at line 1
+2018-11-05 12:05:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:05:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:05:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:05:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:05:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-11-05 12:05:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:05:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:05:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 91[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 28[MESSAGGE]Undefined index: role
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\sell.php: 91[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-05 12:10:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 28[MESSAGGE]Undefined index: role
+
+2018-11-05 12:10:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:10:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:10:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:10:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:10:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-11-05 12:10:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:10:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 28[MESSAGGE]Undefined index: role
+
+2018-11-05 12:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-11-05 12:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:10:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:11:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 28[MESSAGGE]Undefined index: role
+
+2018-11-05 12:11:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 26[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:11:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 27[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:11:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 32[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:11:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 35[MESSAGGE]Undefined index: user_nickname
+
+2018-11-05 12:11:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 36[MESSAGGE]Undefined index: role_name
+
+2018-11-05 12:11:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 62[MESSAGGE]Undefined index: user_image
+
+2018-11-05 12:11:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\navbar.php: 65[MESSAGGE]Undefined index: user_nickname
+
