@@ -1,0 +1,19 @@
+2018-11-13 22:04:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\PersonController.php: 39[MESSAGGE]Array to string conversion
+
+2018-11-13 22:06:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\PersonController.php: 39[MESSAGGE]Array to string conversion
+
+2018-11-13 22:21:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Person.php: 26[MESSAGGE]Undefined property: Person::$person_addres
+
+2018-11-13 22:24:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\PersonController.php: 74[MESSAGGE]Undefined index: id_person
+
+2018-11-13 22:32:06[UTC -5] [ip] ::1 [location] Person|editPerson [text] SIN PERMISOS SUFICIENTES
+2018-11-13 22:33:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\PersonController.php: 52[MESSAGGE]Undefined index: id
+
+2018-11-13 22:33:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\person\editperson.php: 41[MESSAGGE]Trying to get property of non-object
+
+2018-11-13 22:33:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\person\editperson.php: 87[MESSAGGE]Trying to get property of non-object
+
+2018-11-13 22:35:06[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\person\editperson.php: 53[MESSAGGE]Undefined property: stdClass::$person_adress
+
+2018-11-13 22:36:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Person.php: 38[MESSAGGE]Undefined property: Person::$person_addres
+

@@ -17,33 +17,29 @@ class Person{
     public function save($model){
         try {
             if(empty($model->id_person)){
-                $sql = 'call s_i_insert_person(?,?,?,?,?,?,?,?,?)';
+                $sql = 'insert into person (person_name, person_surname, person_dni, person_address, person_cellphone, person_genre) values (?,?,?,?,?,?)';
                 $stm = $this->pdo->prepare($sql);
-                $stm->bindParam(1,$model->id_district,PDO::PARAM_INT);
-                $stm->bindParam(2,$model->person_name,PDO::PARAM_STR);
-                $stm->bindParam(3,$model->person_surname,PDO::PARAM_STR);
-                $stm->bindParam(4,$model->person_address,PDO::PARAM_STR);
-                $stm->bindParam(5,$model->person_coord_x,PDO::PARAM_STR);
-                $stm->bindParam(6,$model->person_coord_y,PDO::PARAM_STR);
-                $stm->bindParam(7,$model->person_cellphone,PDO::PARAM_STR);
-                $stm->bindParam(8,$model->person_genre,PDO::PARAM_STR);
-                $stm->bindParam(9,$model->person_birth,PDO::PARAM_STR);
-                $stm->execute();
+                $stm->execute([
+                    $model->person_name,
+                    $model->person_surname,
+                    $model->person_dni,
+                    $model->person_address,
+                    $model->person_cellphone,
+                    $model->person_genre
+                ]);
                 $result = 1;
             } else {
-                $sql = "call s_u_update_person(?,?,?,?,?,?,?,?,?,?)";
+                $sql = 'update person set person_name = ?, person_surname = ?, person_dni = ?, person_address = ?, person_cellphone = ?, person_genre = ? where id_person = ?';
                 $stm = $this->pdo->prepare($sql);
-                $stm->bindParam(1,$model->id_district,PDO::PARAM_INT);
-                $stm->bindParam(2,$model->person_name,PDO::PARAM_STR);
-                $stm->bindParam(3,$model->person_surname,PDO::PARAM_STR);
-                $stm->bindParam(4,$model->person_address,PDO::PARAM_STR);
-                $stm->bindParam(5,$model->person_coord_x,PDO::PARAM_STR);
-                $stm->bindParam(6,$model->person_coord_y,PDO::PARAM_STR);
-                $stm->bindParam(7,$model->person_cellphone,PDO::PARAM_STR);
-                $stm->bindParam(8,$model->person_genre,PDO::PARAM_STR);
-                $stm->bindParam(9,$model->person_birth,PDO::PARAM_STR);
-                $stm->bindParam(10,$model->id_person,PDO::PARAM_INT);
-                $stm->execute();
+                $stm->execute([
+                    $model->person_name,
+                    $model->person_surname,
+                    $model->person_dni,
+                    $model->person_address,
+                    $model->person_cellphone,
+                    $model->person_genre,
+                    $model->id_person
+                ]);
                 $result = 1;
             }
         } catch (Exception $e){
@@ -53,14 +49,41 @@ class Person{
         return $result;
     }
     public function list(){
-        $result = [];
         try {
-            $sql = 'select * from person';
+            $sql = 'select * from person where id_person <> 2';
             $stm = $this->pdo->prepare($sql);
             $stm->execute();
             $result = $stm->fetchAll();
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'Person|list');
+            $result = 2;
+        }
+        return $result;
+    }
+
+    public function listperson($id_person){
+        try {
+            $sql = 'select * from person where id_person = ? limit 1';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([$id_person]);
+            $result = $stm->fetch();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Person|list');
+            $result = 2;
+        }
+        return $result;
+    }
+
+    public function deletePerson($id_person){
+        try {
+            $sql = 'delete from person where id_person = ?';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([
+                $id_person
+            ]);
+            $result = 1;
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Person|deletePerson');
             $result = 2;
         }
         return $result;

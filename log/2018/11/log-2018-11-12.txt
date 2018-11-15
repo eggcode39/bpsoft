@@ -1,0 +1,125 @@
+2018-11-12 15:18:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 130[MESSAGGE]Undefined property: stdClass::$id_locacion
+
+2018-11-12 15:18:46[UTC -5] [ip] ::1 [location] Sell|insertLocacionrent [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_salerent' cannot be null
+2018-11-12 15:19:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 130[MESSAGGE]Undefined property: stdClass::$id_locacion
+
+2018-11-12 15:19:41[UTC -5] [ip] ::1 [location] Sell|insertLocacionrent [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_salerent' cannot be null
+2018-11-12 15:21:13[UTC -5] [ip] ::1 [location] Sell|insertLocacionrent [text] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestionbillarbd`.`locationrent`, CONSTRAINT `locationrent_ibfk_1` FOREIGN KEY (`id_location`) REFERENCES `location` (`id_location`))
+2018-11-12 18:24:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 85[MESSAGGE]Undefined variable: rents
+
+2018-11-12 18:24:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 85[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-12 18:24:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 122[MESSAGGE]Undefined variable: people
+
+2018-11-12 18:24:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 122[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-12 18:25:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Undefined variable: products
+
+2018-11-12 18:25:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-12 18:25:23[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Undefined variable: products
+
+2018-11-12 18:25:23[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-12 18:25:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 50[MESSAGGE]Undefined variable: products
+
+2018-11-12 18:25:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 50[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-12 18:26:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 50[MESSAGGE]Undefined variable: products
+
+2018-11-12 18:26:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 50[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-12 18:38:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Undefined variable: id_location
+
+2018-11-12 18:38:41[UTC -5] [ip] ::1 [location] Sell|viewRents [text] Cannot access empty property
+2018-11-12 18:39:06[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Undefined variable: id_location
+
+2018-11-12 18:39:06[UTC -5] [ip] ::1 [location] Sell|viewRents [text] Cannot access empty property
+2018-11-12 18:39:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Undefined variable: id_location
+
+2018-11-12 18:39:07[UTC -5] [ip] ::1 [location] Sell|viewRents [text] Cannot access empty property
+2018-11-12 18:40:49[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Undefined variable: id_location
+
+2018-11-12 18:40:49[UTC -5] [ip] ::1 [location] Sell|viewRents [text] Cannot access empty property
+2018-11-12 18:41:16[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Undefined variable: id_location
+
+2018-11-12 18:40:59[UTC -5] [ip] ::1 [location] Sell|viewRents [text] Cannot access empty property
+2018-11-12 18:42:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 51[MESSAGGE]Undefined variable: id_location
+
+2018-11-12 18:41:30[UTC -5] [ip] ::1 [location] Sell|viewRents [text] Cannot access empty property
+2018-11-12 18:46:57[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 55[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:46:57[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 55[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:46:57[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 55[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 55[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 56[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 55[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 56[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 55[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 56[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 18:47:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 57[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 63[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 64[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 65[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 63[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 64[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 65[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 63[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 64[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:21:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 65[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 63[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 64[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 65[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 63[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 64[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 65[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 63[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 64[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:32:24[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 65[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:39:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:39:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:39:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:40:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:40:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:40:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 60[MESSAGGE]Trying to get property of non-object
+
+2018-11-12 19:46:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 80[MESSAGGE]Undefined property: stdClass::$id_locacion
+
+2018-11-12 19:46:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents.php: 80[MESSAGGE]Undefined property: stdClass::$id_locacionrent
+

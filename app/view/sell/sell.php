@@ -32,14 +32,26 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-5">
                 <label style="font-size: 22px;padding-right: 10px;">Cliente a Vender: </label>
-                <input style="font-size: 22px;padding-left: 8px;width: 450px;" type="text" value="0000000 - Anonymus Young" id="name_person" readonly>
+                <input style="font-size: 22px;padding-left: 8px;width: 350px;" type="text" value="0000000 - Anonymus Young" id="name_person" readonly>
                 <input type="text" id="id_persona" style="display: none" value="2">
             </div>
-            <div class="col-xs-6">
-                <label style="font-size: 22px"> Cantidad del Producto a Vender: </label>
+            <div class="col-xs-3">
+                <label style="font-size: 22px"> Cantidad a Vender: </label>
                 <input  style="font-size: 22px;width: 65px;padding-left: 10px;" type="number" value="1" id="product_sale">
+            </div>
+            <div class="col-xs-4">
+                <select id="type_sell" class="form-control">
+                    <option value="YES">VENTA AL CONTADO</option>
+                    <option value="NO">FIADO</option>
+                    <?php
+                    $type_user = $this->crypt->decrypt($_COOKIE['role_name'],_PASS_) ?? $this->crypt->decrypt($_SESSION['role_name'],_PASS_);
+                    if($type_user == 'Admin'){
+                        echo '<option value="FREE">LA CASA INVITA</option>';
+                    }
+                    ?>
+                </select>
             </div>
         </div>
         <br>
@@ -141,23 +153,88 @@
     }
 
     function preguntarSiNo(id_product,nameproduct,stock_general,price,unidforsale){
+        var tipoventa = $('#type_sell').val();
         var unid_sale = $("#product_sale").val();
         var id_persona = id_person;
         var totalprice = price * unid_sale;
         var unid_to_sale = unidforsale * unid_sale;
-        if(stock_general >= unid_to_sale){
-            alertify.confirm('Realizar Venta', '¿Esta seguro que desea vender ' + unid_sale +' unidades de ' + nameproduct +' a ' + nameperson + ' por S./ ' + price +' soles? Precio a Cobrar: S/. ' + totalprice + ' soles.',
-                function(){ vender(id_product, id_persona, unid_sale, totalprice) }
-                , function(){ alertify.error('Operacion Cancelada')});
-        } else {
-            alertify.error('ERROR: STOCK INSUFICIENTE');
+        if(tipoventa == 'YES'){
+            if(stock_general >= unid_to_sale){
+                alertify.confirm('Realizar Venta', '¿Esta seguro que desea vender ' + unid_sale +' unidades de ' + nameproduct +' a ' + nameperson + ' por S./ ' + price +' soles? Precio a Cobrar: S/. ' + totalprice + ' soles.',
+                    function(){ vender(id_product, id_persona, unid_sale, totalprice) }
+                    , function(){ alertify.error('Operacion Cancelada')});
+            } else {
+                alertify.error('ERROR: STOCK INSUFICIENTE');
+            }
+        } else if(tipoventa == 'NO'){
+            if(id_person == 2){
+                alertify.error('ERROR: NO SE PUEDE FIAR A USUARIO ANONYMUS');
+            } else {
+                if(stock_general >= unid_to_sale){
+                    alertify.confirm('Fiar Venta', '¿Esta seguro que desea fiar ' + unid_sale +' unidades de ' + nameproduct +' a ' + nameperson + ' por S./ ' + price +' soles? Precio a Cobrar: S/. ' + totalprice + ' soles.',
+                        function(){ fiar(id_product, id_persona, unid_sale, totalprice) }
+                        , function(){ alertify.error('Operacion Cancelada')});
+                } else {
+                    alertify.error('ERROR: STOCK INSUFICIENTE');
+                }
+            }
+        } else{
+            if(stock_general >= unid_to_sale){
+                alertify.confirm('LA CASA INVITA', '¿Esta seguro que desea dar ' + unid_sale +' unidades de ' + nameproduct +' a ' + nameperson + ' por S./ 0 soles? Precio a Cobrar: S/. 0 soles.',
+                    function(){ regalar(id_product, id_persona, unid_sale, totalprice) }
+                    , function(){ alertify.error('Operacion Cancelada')});
+            } else {
+                alertify.error('ERROR: STOCK INSUFICIENTE');
+            }
         }
     }
 
     function vender(id_productforsale, id_person, stocksale){
         var cadena = "id_productforsale=" + id_productforsale +
-                    "&id_person=" + id_person +
-                    "&stocksale=" + stocksale;
+            "&id_person=" + id_person +
+            "&stocksale=" + stocksale;
+        $.ajax({
+            type:"POST",
+            url: "<?php echo _SERVER_;?>api/Sell/sellProduct",
+            data : cadena,
+            success:function (r) {
+                if(r==1){
+                    alertify.success('Venta Realizada');
+                    location.reload();
+                } else {
+                    alertify.error('No se pudo llevar acabo la venta');
+                }
+            }
+        });
+    }
+
+    function fiar(id_productforsale, id_person, stocksale){
+        var tipoventa = 'FIAR';
+        var cadena = "id_productforsale=" + id_productforsale +
+            "&id_person=" + id_person +
+            "&stocksale=" + stocksale +
+            "&type_sell=" + tipoventa;
+        $.ajax({
+            type:"POST",
+            url: "<?php echo _SERVER_;?>api/Sell/sellProduct",
+            data : cadena,
+            success:function (r) {
+                if(r==1){
+                    alertify.success('Venta Realizada');
+                    location.reload();
+                } else {
+                    alertify.error('No se pudo llevar acabo la venta');
+                }
+            }
+        });
+    }
+
+    function regalar(id_productforsale, id_person, stocksale){
+        var tipoventa = 'REGALAR';
+        var cadena = "id_productforsale=" + id_productforsale +
+            "&id_person=" + id_person +
+            "&stocksale=" + stocksale +
+            "&type_sell=" + tipoventa;
         $.ajax({
             type:"POST",
             url: "<?php echo _SERVER_;?>api/Sell/sellProduct",

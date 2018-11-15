@@ -1,0 +1,61 @@
+2018-11-11 17:24:45[UTC -5] [ip] ::1 [location] Debt|seeAll [text] Class 'DebtController' not found
+2018-11-11 17:25:59[UTC -5] [ip] ::1 [location] Debt|seeAll [text] Class 'DebtController' not found
+2018-11-11 17:26:00[UTC -5] [ip] ::1 [location] Debt|seeAll [text] Class 'DebtController' not found
+2018-11-11 17:26:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 52[MESSAGGE]Undefined variable: products
+
+2018-11-11 17:26:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 52[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-11 17:26:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 92[MESSAGGE]Undefined variable: products
+
+2018-11-11 17:26:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 92[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-11 19:41:28[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 96[MESSAGGE]Undefined variable: products
+
+2018-11-11 19:41:28[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 96[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-11 19:45:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 105[MESSAGGE]Undefined property: stdClass::$rent_name
+
+2018-11-11 19:45:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 106[MESSAGGE]Undefined property: stdClass::$debtrent_total
+
+2018-11-11 19:45:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 107[MESSAGGE]Undefined property: stdClass::$debtrent_cancelled
+
+2018-11-11 19:45:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 108[MESSAGGE]Undefined property: stdClass::$debtrent_total
+
+2018-11-11 19:45:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 109[MESSAGGE]Undefined property: stdClass::$id_debtrent
+
+2018-11-11 19:46:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 108[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:48:06[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 118[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:48:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 118[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:49:04[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 118[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:49:39[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 118[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:52:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:53:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:53:29[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:54:39[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:55:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:57:08[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 19:58:15[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 20:12:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 20:12:38[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 20:16:32[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 20:17:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 20:45:28[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+
+2018-11-11 20:45:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\debt\seeall.php: 123[MESSAGGE]Undefined property: stdClass::$debt_cancelled
+

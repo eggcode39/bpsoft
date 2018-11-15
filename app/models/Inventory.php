@@ -406,4 +406,34 @@ class Inventory{
         return $result;
     }
 
+    //Listar Locaciones Alquiler
+    public function listlocations(){
+        $result = [];
+        try {
+            $sql = 'select * from location order by location_name asc';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Sell|listlocations');
+            $result = 2;
+        }
+        return $result;
+    }
+
+    //Ver si Locacion está disponible
+    public function viewstatuslocacion(){
+        $result = [];
+        try {
+            $sql = 'select * from location l  inner join salerent order by location_name asc';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Sell|listlocations');
+            $result = 2;
+        }
+        return $result;
+    }
+
 }

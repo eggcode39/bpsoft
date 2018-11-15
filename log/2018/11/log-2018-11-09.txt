@@ -1,0 +1,8 @@
+2018-11-09 23:43:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 74[MESSAGGE]Undefined variable: products
+
+2018-11-09 23:43:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 74[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-09 23:43:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 111[MESSAGGE]Undefined variable: people
+
+2018-11-09 23:43:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 111[MESSAGGE]Invalid argument supplied for foreach()
+

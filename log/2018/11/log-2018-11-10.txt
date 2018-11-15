@@ -1,0 +1,96 @@
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 79[MESSAGGE]Undefined property: stdClass::$timeminutes
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 111[MESSAGGE]Undefined variable: people
+
+2018-11-10 00:07:33[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 111[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 79[MESSAGGE]Undefined property: stdClass::$timeminutes
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:08:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:09:21[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Undefined variable: product
+
+2018-11-10 00:16:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\sell\rent.php: 81[MESSAGGE]Trying to get property of non-object
+
+2018-11-10 19:09:09[UTC -5] [ip] ::1 [location] Sell|sellRent [text] SIN PERMISOS SUFICIENTES
+2018-11-10 19:53:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 116[MESSAGGE]Undefined variable: cancelled
+
+2018-11-10 19:53:22[UTC -5] [ip] ::1 [location] Sell|insertSale [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'salerent_cancelled' cannot be null
+2018-11-10 19:54:20[UTC -5] [ip] ::1 [location] Sell|insertSale [text] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestionbillarbd`.`salerent`, CONSTRAINT `salerent_ibfk_4` FOREIGN KEY (`id_location`) REFERENCES `location` (`id_location`))
+2018-11-10 19:56:13[UTC -5] [ip] ::1 [location] Sell|insertRent [text] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestionbillarbd`.`salerent`, CONSTRAINT `salerent_ibfk_4` FOREIGN KEY (`id_location`) REFERENCES `location` (`id_location`))
+2018-11-10 19:56:51[UTC -5] [ip] ::1 [location] Sell|insertRent [text] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestionbillarbd`.`salerent`, CONSTRAINT `salerent_ibfk_4` FOREIGN KEY (`id_location`) REFERENCES `location` (`id_location`))
+2018-11-10 19:58:25[UTC -5] [ip] ::1 [location] Sell|insertRent [text] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestionbillarbd`.`salerent`, CONSTRAINT `salerent_ibfk_4` FOREIGN KEY (`id_location`) REFERENCES `location` (`id_location`))
