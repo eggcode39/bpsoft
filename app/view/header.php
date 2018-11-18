@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/jvectormap/jquery-jvectormap-1.2.2.css">
   <!-- Date Picker -->
   <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/datepicker/datepicker3.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/select2/select2.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
@@ -47,5 +49,8 @@
     <script src="<?php echo _SERVER_ .  _STYLES_;?>alertifyjs/alertify.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo _SERVER_ .  _STYLES_;?>alertifyjs/css/alertify.css">
     <link rel="stylesheet" type="text/css" href="<?php echo _SERVER_ .  _STYLES_;?>alertifyjs/css/themes/default.css">
+
+    <!-- Select2 -->
+    <script src="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/select2/select2.full.min.js"></script>
 
 </head>

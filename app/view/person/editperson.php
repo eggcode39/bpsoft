@@ -59,8 +59,8 @@
                             <div class="form-group">
                                 <label >Genero Persona</label>
                                 <select  id="person_genre">
-                                    <option value="M">Masculino</option>
-                                    <option value="F">Femenino</option>
+                                    <option <?php echo ($list->person_genre == 'M') ? 'selected' : '';?> value="M">Masculino</option>
+                                    <option <?php echo ($list->person_genre == 'F') ? 'selected' : '';?> value="F">Femenino</option>
                                 </select>
                             </div>
                         </div>

@@ -39,8 +39,6 @@ class LoginController{
 
         } else {
             if(password_verify($password, $singin[0]->user_password)){
-
-
                 setcookie('id_user', $this->crypt->encrypt($singin[0]->id_user, _PASS_), time() + 30 * 24 * 60 * 60, "/");
                 setcookie('id_person', $this->crypt->encrypt($singin[0]->id_user, _PASS_), time() + 30 * 24 * 60 * 60, "/");
                 setcookie('user_nickname', $this->crypt->encrypt($singin[0]->user_nickname, _PASS_), time() + 365 * 24 * 60 * 60, "/");
@@ -109,6 +107,8 @@ class LoginController{
             $this->log->insert($e->getMessage(), 'singOut|LoginController');
             $okey = 2;
         }
-        echo $okey;
+        if($okey ==1){
+            header('Location: ' . _SERVER_ );
+        }
     }
 }

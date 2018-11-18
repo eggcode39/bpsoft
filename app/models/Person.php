@@ -61,6 +61,19 @@ class Person{
         return $result;
     }
 
+    public function listwithout(){
+        try {
+            $sql = 'select * from person p where p.id_person <> 2 and not exists (select null from user u where u.id_person = p.id_person)';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Person|listwithout');
+            $result = 2;
+        }
+        return $result;
+    }
+
     public function listperson($id_person){
         try {
             $sql = 'select * from person where id_person = ? limit 1';

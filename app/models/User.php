@@ -6,7 +6,7 @@
  * Time: 1:13
  */
 
-use Exception;
+//use Exception;
 class User{
     private $pdo;
     private $log;
@@ -15,37 +15,63 @@ class User{
         $this->log = new Log();
     }
 
+    public function readAllrolenotfree(){
+        try{
+            $sql = 'select * from role where id_role <> 1';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), "User|readAllrolenotfree");
+            $result = 2;
+        }
+        return $result;
+    }
+
+    public function selectuser($id){
+        try{
+            $sql = 'select * from user u inner join person p on u.id_person = p.id_person where u.id_user = ?';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([$id]);
+            $result = $stm->fetch();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), "User|selectuser");
+            $result = 2;
+        }
+        return $result;
+    }
+
     public function save($model){
-        $result = 2;
         try {
             if(empty($model->id_user)){
-                $sql = 'call s_i_insert_user(?,?,?,?,?,?,?,?,?)';
+                $sql = 'insert into user (id_person, id_role, user_nickname, user_password, user_image, user_status) values(?,?,?,?,?,?)';
                 $stm = $this->pdo->prepare($sql);
-                $stm->bindParam(1,$model->id_person,PDO::PARAM_INT);
-                $stm->bindParam(2,$model->user_nickname,PDO::PARAM_STR);
-                $stm->bindParam(3,$model->user_password,PDO::PARAM_STR);
-                $stm->bindParam(4,$model->user_image,PDO::PARAM_STR);
-                $stm->bindParam(5,$model->user_email,PDO::PARAM_STR);
-                $stm->bindParam(6,$model->user_last_login,PDO::PARAM_STR);
-                $stm->bindParam(7,$model->user_created_at,PDO::PARAM_STR);
-                $stm->bindParam(8,$model->user_modified_at,PDO::PARAM_STR);
-                $stm->bindParam(9,$model->user_status,PDO::PARAM_STR);
-                $stm->execute();
+                $stm->execute([
+                    $model->id_person,
+                    $model->id_role,
+                    $model->user_nickname,
+                    $model->user_password,
+                    $model->user_image,
+                    $model->user_status
+                ]);
                 $result = 1;
             } else {
-                $sql = "call s_u_update_user(?,?,?,?,?,?,?,?,?,?)";
+                $sql = 'update user set
+                id_person = ?,
+                id_role = ?,
+                user_nickname = ?,
+                user_image = ?,
+                user_status = ?
+                where id_user = ?';
                 $stm = $this->pdo->prepare($sql);
-                $stm->bindParam(1,$model->id_person,PDO::PARAM_INT);
-                $stm->bindParam(2,$model->user_nickname,PDO::PARAM_STR);
-                $stm->bindParam(3,$model->user_password,PDO::PARAM_STR);
-                $stm->bindParam(4,$model->user_image,PDO::PARAM_STR);
-                $stm->bindParam(5,$model->user_email,PDO::PARAM_STR);
-                $stm->bindParam(6,$model->user_last_login,PDO::PARAM_STR);
-                $stm->bindParam(7,$model->user_created_at,PDO::PARAM_STR);
-                $stm->bindParam(8,$model->user_modified_at,PDO::PARAM_STR);
-                $stm->bindParam(9,$model->user_status,PDO::PARAM_STR);
-                $stm->bindParam(10,$model->id_user,PDO::PARAM_INT);
-                $stm->execute();
+                $stm->execute([
+                    $model->id_person,
+                    $model->id_role,
+                    $model->user_nickname,
+                    $model->user_image,
+                    $model->user_status,
+                    $model->id_user
+                ]);
                 $result = 1;
             }
         } catch (Exception $e){
@@ -55,15 +81,49 @@ class User{
         }
         return $result;
     }
-    public function readAll(){
-        $result = [];
+
+    public function changepassword($model){
         try {
-            $sql = 'select * from user u inner join person p on u.id_person = p.id_person';
+            $sql = 'update user set
+                user_password = ?
+                where id_user = ?';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([
+                $model->user_password,
+                $model->id_user
+            ]);
+            $result = 1;
+        } catch (Exception $e){
+            //throw new Exception($e->getMessage());
+            $this->log->insert($e->getMessage(),'User|changepassword');
+            $result = 2;
+        }
+        return $result;
+    }
+    public function readAll(){
+        try {
+            $sql = 'select * from user u inner join person p on u.id_person = p.id_person inner join role r on u.id_role = r.id_role';
             $stm = $this->pdo->prepare($sql);
             $stm->execute();
             $result = $stm->fetchAll();
         } catch (Exception $e){
             $this->log->insert($e->getMessage(),'User|readAll');
+            $result = 2;
+        }
+        return $result;
+    }
+
+    public function changestatus($id_user, $status){
+        try {
+            $sql = 'update user set user_status = ? where id_user = ?';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([
+                $status,
+                $id_user
+            ]);
+            $result = 1;
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(),'User|changestatus');
             $result = 2;
         }
         return $result;

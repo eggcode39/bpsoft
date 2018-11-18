@@ -1,0 +1,63 @@
+2018-11-16 09:06:29[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 09:06:29[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\user\seeall.php: 53[MESSAGGE]Undefined variable: user
+
+2018-11-16 09:06:29[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\user\seeall.php: 53[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-16 09:06:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 09:06:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\user\seeall.php: 57[MESSAGGE]Undefined property: stdClass::$user_name
+
+2018-11-16 09:07:20[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 09:07:20[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\user\seeall.php: 57[MESSAGGE]Undefined property: stdClass::$user_name
+
+2018-11-16 09:10:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 09:20:02[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 09:26:29[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 09:31:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 12:39:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 12:39:53[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 17:54:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:06:02[UTC -5] [ip] ::1 [location] Login|singIn [text] SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8_spanish_ci' is not valid for CHARACTER SET 'latin1'
+2018-11-16 18:06:11[UTC -5] [ip] ::1 [location] Login|singIn [text] SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8_spanish_ci' is not valid for CHARACTER SET 'latin1'
+2018-11-16 18:06:41[UTC -5] [ip] ::1 [location] Login|singIn [text] SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8_spanish_ci' is not valid for CHARACTER SET 'latin1'
+2018-11-16 18:06:49[UTC -5] [ip] ::1 [location] Login|singIn [text] SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8_spanish_ci' is not valid for CHARACTER SET 'latin1'
+2018-11-16 18:07:26[UTC -5] [ip] ::1 [location] Login|singIn [text] SQLSTATE[42000]: Syntax error or access violation: 1253 COLLATION 'utf8_spanish_ci' is not valid for CHARACTER SET 'latin1'
+2018-11-16 18:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 48[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-16 18:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 49[MESSAGGE]Undefined property: stdClass::$user_last_login
+
+2018-11-16 18:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 61[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-16 18:09:27[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 62[MESSAGGE]Undefined property: stdClass::$user_last_login
+
+2018-11-16 18:24:20[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:24:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:29:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:35:03[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:36:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:40:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:54:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:56:13[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:57:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 18:57:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-16 19:05:44[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+

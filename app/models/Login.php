@@ -16,11 +16,11 @@ class Login{
 
     public function singIn($model){
         try{
-            $sql = 'call s_s_login_user(?)';
+            $sql = 'Select * from user u inner join person p on u.id_person = p.id_person inner join role r on r.id_role = u.id_role where u.user_nickname = ? and u.user_status = 1';
             $stm = $this->pdo->prepare($sql);
-            $stm->bindParam(1,$model->user_nickname,PDO::PARAM_STR);
-            //$stm->bindParam(2,$model->user_password,PDO::PARAM_STR);
-            $stm->execute();
+            $stm->execute([
+                $model->user_nickname
+            ]);
             $result = $stm->fetchAll();
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'Login|singIn');

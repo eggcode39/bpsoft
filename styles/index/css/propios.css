@@ -2,6 +2,10 @@
     width: 80px;
 }
 
+.btn-chico-especial{
+    width: 120px;
+}
+
 .btn-grande{
     width: 200px;
     font-size: 20px;

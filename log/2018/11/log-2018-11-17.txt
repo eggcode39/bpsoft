@@ -1,0 +1,10 @@
+2018-11-17 12:02:23[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-17 12:02:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-17 12:03:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-17 12:04:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+
+2018-11-17 12:04:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\User.php: 9[MESSAGGE]The use statement with non-compound name 'Exception' has no effect
+

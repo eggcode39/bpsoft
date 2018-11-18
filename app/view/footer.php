@@ -17,6 +17,7 @@
 <script src="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>bootstrap/js/bootstrap.min.js"></script>
 <!-- Sparkline -->
 <script src="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/sparkline/jquery.sparkline.min.js"></script>
+
 <!-- jvectormap -->
 <script src="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script src="<?php echo _SERVER_ . _VIEW_PATH_INDEX_;?>plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>

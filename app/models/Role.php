@@ -14,6 +14,21 @@ class Role{
         $this->log = new Log();
     }
 
+    public function readAllrole(){
+        try{
+            $sql = 'select * from role';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), "Role|save");
+            $result = 2;
+        }
+        return $result;
+    }
+
+
+
     public function save($model){
         try {
             if(empty($model->id_role)){
