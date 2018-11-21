@@ -8,6 +8,7 @@
 require 'app/models/Person.php';
 require 'app/models/Sell.php';
 require 'app/models/Inventory.php';
+require 'app/models/Active.php';
 class SellController{
     private $crypt;
     private $menu;
@@ -15,6 +16,8 @@ class SellController{
     private $inventory;
     private $person;
     private $sell;
+    private $active;
+
     public function __construct()
     {
         $this->crypt = new Crypt();
@@ -23,6 +26,7 @@ class SellController{
         $this->inventory = new Inventory();
         $this->person = new Person();
         $this->sell = new Sell();
+        $this->active = new Active();
     }
 
     //Vistas
@@ -59,8 +63,11 @@ class SellController{
     }
 
     //Funciones
+
+    //VENDER PRODUCTO----------------------------------------------->
     public function sellProduct(){
         try{
+            $id_turn = $this->active->getTurnactive();
             $id_user = $this->crypt->decrypt($_COOKIE['id_user'],_PASS_) ?? $this->crypt->decrypt($_SESSION['id_user'],_PASS_);
             $id_productforsale = $_POST['id_productforsale'];
             $id_person = $_POST['id_person'];
@@ -80,8 +87,12 @@ class SellController{
                 $cancelled = 'true';
             }
 
-            $savesale = $this->sell->insertSale($id_person, $id_user,$totalsale,$cancelled);
-            $savedetail = $this->sell->insertSaledetail($savesale[0]->id_saleproduct, $id_productforsale,$product[0]->product_name, $product[0]->product_unid, $product[0]->product_price, $stocksale);
+            $savesale = $this->sell->insertSale($id_person, $id_user,$id_turn,$totalsale,$cancelled);
+            if(isset($_POST['type_sell'])){
+                $savedetail = $this->sell->insertSaledetail($savesale[0]->id_saleproduct, $id_productforsale,$product[0]->product_name, $product[0]->product_unid, 0, $stocksale);
+            } else {
+                $savedetail = $this->sell->insertSaledetail($savesale[0]->id_saleproduct, $id_productforsale,$product[0]->product_name, $product[0]->product_unid, $product[0]->product_price, $stocksale);
+            }
 
             if($savedetail == 1){
                 $reduce = $stocksale * $product[0]->product_unid;
@@ -102,9 +113,10 @@ class SellController{
         echo $return;
     }
 
-    //Funciones
+    //ALQUILER PRODUCTO-------------------------------------------------->
     public function sellRent(){
         try{
+            $id_turn = $this->active->getTurnactive();
             $id_user = $this->crypt->decrypt($_COOKIE['id_user'],_PASS_) ?? $this->crypt->decrypt($_SESSION['id_user'],_PASS_);
             $id_rent = $_POST['id_rent'];
             $id_person = $_POST['id_person'];
@@ -124,7 +136,7 @@ class SellController{
                 $cancelled = 'true';
             }
 
-            $saverent = $this->sell->insertRent($id_rent,$id_person,$id_user,$id_location,$totalprice,$cancelled,$minutes_to_rent);
+            $saverent = $this->sell->insertRent($id_rent,$id_person,$id_user,$id_turn,$id_location,$totalprice,$cancelled,$minutes_to_rent);
             $updatelocation = $this->sell->updateLocationstatus($id_location,1);
 
             $savelocationrent = $this->sell->insertLocacionrent($saverent[0]->id_salerent, $saverent[0]->id_location);
@@ -143,6 +155,7 @@ class SellController{
         }
         echo $return;
     }
+
 
     public function finishRent(){
         try{

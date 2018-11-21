@@ -61,14 +61,15 @@ class Sell{
     }
 
     //Insertar Datos En Detalle Venta
-    public function insertSale($id_person,$id_user,$total,$cancelled){
+    public function insertSale($id_person,$id_user,$id_turn,$total,$cancelled){
         try{
             $date = date("Y-m-d H:i:s");
-            $sql = 'insert into saleproduct(id_person, id_user, saleproduct_total, saleproduct_date, saleproduct_cancelled) values(?,?,?,?,?)';
+            $sql = 'insert into saleproduct(id_person, id_user, id_turn, saleproduct_total, saleproduct_date, saleproduct_cancelled) values(?,?,?,?,?,?)';
             $stm = $this->pdo->prepare($sql);
             $stm->execute([
                 $id_person,
                 $id_user,
+                $id_turn,
                 $total,
                 $date,
                 $cancelled
@@ -150,19 +151,20 @@ class Sell{
     }
 
     //Insertar Venta Renta
-    public function insertRent($id_rent,$id_person,$id_user,$id_location,$totalprice,$cancelled,$minutes){
+    public function insertRent($id_rent,$id_person,$id_user,$id_turn,$id_location,$totalprice,$cancelled,$minutes){
         try{
             $date = date("Y-m-d");
             $start = date("H:i:s");
             $starseconds = strtotime($start);
             $seconds_to_add = $minutes * 60;
             $finish = date("H:i:s", $starseconds + $seconds_to_add);
-            $sql = 'insert into salerent (id_rent, id_person, id_user, id_location, salerent_date, salerent_start, salerent_finish, salerent_total, salerent_finished, salerent_cancelled) values (?,?,?,?,?,?,?,?,?,?)';
+            $sql = 'insert into salerent (id_rent, id_person, id_user,id_turn, id_location, salerent_date, salerent_start, salerent_finish, salerent_total, salerent_finished, salerent_cancelled) values (?,?,?,?,?,?,?,?,?,?,?)';
             $stm = $this->pdo->prepare($sql);
             $stm->execute([
                 $id_rent,
                 $id_person,
                 $id_user,
+                $id_turn,
                 $id_location,
                 $date,
                 $start,

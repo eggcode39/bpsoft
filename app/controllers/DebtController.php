@@ -6,17 +6,20 @@
  * Time: 17:05
  */
 require 'app/models/Debt.php';
+require 'app/models/Active.php';
 class DebtController{
     private $crypt;
     private $menu;
     private $log;
     private $debt;
+    private $active;
 
     public function __construct(){
         $this->crypt = new Crypt();
         $this->menu = new Menu();
         $this->log = new Log();
         $this->debt = new Debt();
+        $this->active = new Active();
     }
 
     //Vistas
@@ -31,8 +34,10 @@ class DebtController{
     }
 
     //Funciones
+    //PAGAR DEUDA PRODUCTO-------------------------------------->
     public function payDebt(){
         try{
+            $id_turn = $this->active->getTurnactive();
             $id_debt = $_POST['id_debt'];
             $debt_forpay = $_POST['debt_forpay'];
             $id_saleproduct = $_POST['id_saleproduct'];
@@ -51,8 +56,10 @@ class DebtController{
         echo $result;
     }
 
+    //PAGAR DEUDA ALQUILER------------------------------------------->
     public function payDebtrent(){
         try{
+            $id_turn = $this->active->getTurnactive();
             $id_debtrent = $_POST['id_debtrent'];
             $debt_forpay = $_POST['debt_forpay'];
             $id_salerent = $_POST['id_salerent'];

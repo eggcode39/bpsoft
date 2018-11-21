@@ -1,0 +1,15 @@
+2018-11-19 09:58:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 46[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-19 09:58:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 47[MESSAGGE]Undefined property: stdClass::$user_last_login
+
+2018-11-19 09:58:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 59[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-19 09:58:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 60[MESSAGGE]Undefined property: stdClass::$user_last_login
+
+2018-11-19 10:35:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\TurnController.php: 22[MESSAGGE]Undefined property: TurnController::$menu
+
+2018-11-19 10:35:43[UTC -5] [ip] ::1 [location] Turn|seeAll [text] Call to a member function listMenu() on null
+2018-11-19 10:37:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\TurnController.php: 24[MESSAGGE]Undefined property: TurnController::$crypt
+
+2018-11-19 10:37:07[UTC -5] [ip] ::1 [location] Turn|seeAll [text] Call to a member function decrypt() on null
+2018-11-19 11:56:45[UTC -5] [ip] ::1 [location] Turn|add [text] Call to undefined method TurnController::add()

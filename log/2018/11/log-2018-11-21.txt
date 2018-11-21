@@ -1,0 +1,6 @@
+2018-11-21 12:06:08[UTC -5] [ip] ::1 [location] Sell|insertRent [text] SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+2018-11-21 12:06:08[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 142[MESSAGGE]Trying to get property of non-object
+
+2018-11-21 12:06:08[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\SellController.php: 142[MESSAGGE]Trying to get property of non-object
+
+2018-11-21 12:06:08[UTC -5] [ip] ::1 [location] Sell|insertLocacionrent [text] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_salerent' cannot be null

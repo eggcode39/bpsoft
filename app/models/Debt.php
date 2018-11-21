@@ -44,11 +44,20 @@ class Debt{
 
     public function payDebt($id_debt, $paydebt){
         try{
+            $fecha = date("Y-m-d H:i:s");
             $sql = 'update debt set debt_cancelled = debt_cancelled + ? where id_debt = ?';
             $stm = $this->pdo->prepare($sql);
             $stm->execute([
                 $paydebt,
                 $id_debt
+            ]);
+
+            $sql2 = 'insert into debtpay (id_debt, debtpay_mont, debtpay_date) values (?,?,?)';
+            $stm2 = $this->pdo->prepare($sql2);
+            $stm2->execute([
+                $id_debt,
+                $paydebt,
+                $fecha
             ]);
             $result = 1;
         } catch (Exception $e){
@@ -91,12 +100,22 @@ class Debt{
 
     public function payDebtrent($id_debtrent, $paydebt){
         try{
+            $fecha = date("Y-m-d H:i:s");
             $sql = 'update debtrent set debtrent_cancelled = debtrent_cancelled + ? where id_debtrent = ?';
             $stm = $this->pdo->prepare($sql);
             $stm->execute([
                 $paydebt,
                 $id_debtrent
             ]);
+
+            $sql2 = 'insert into debtrentpay (id_debtrent, debtrentpay_mont, debtrent_date) values(?,?,?)';
+            $stm2 = $this->pdo->prepare($sql2);
+            $stm2->execute([
+                $id_debtrent,
+                $paydebt,
+                $fecha
+            ]);
+
             $result = 1;
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'Debt|payDebtrent');
