@@ -6,17 +6,20 @@
  * Time: 19:22
  */
 require 'app/models/Inventory.php';
+require 'app/models/Active.php';
 class InventoryController{
     private $crypt;
     private $menu;
     private $log;
     private $inventory;
+    private $active;
     public function __construct()
     {
         $this->crypt = new Crypt();
         $this->menu = new Menu();
         $this->log = new Log();
         $this->inventory = new Inventory();
+        $this->active =  new Active();
     }
     //Vistas
     //Producto
@@ -81,8 +84,7 @@ class InventoryController{
     public function addProductstock(){
         $idp = $_GET['id'];
         $navs = $this->menu->listMenu($this->crypt->decrypt($_COOKIE['role'],_PASS_) ?? $this->crypt->decrypt($_SESSION['role'],_PASS_));
-        $productprice = $this->inventory->listProductprice($idp);
-        $product = $this->inventory->listProduct($productprice->id_product);
+        $product = $this->inventory->listProduct($idp);
         require _VIEW_PATH_ . 'header.php';
         require _VIEW_PATH_ . 'navbar.php';
         require _VIEW_PATH_ . 'inventory/addstock.php';
@@ -177,7 +179,8 @@ class InventoryController{
         try{
             $id = $_POST['id_product'];
             $stock = $_POST['product_stock'];
-            $result = $this->inventory->saveProductstock($stock, $id);
+            $turn = $this->active->getTurnactive();
+            $result = $this->inventory->saveProductstock($stock, $id, $turn);
 
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'InventoryController|saveProductstock');

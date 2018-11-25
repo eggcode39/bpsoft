@@ -42,7 +42,7 @@ class Debt{
         return $result;
     }
 
-    public function payDebt($id_debt, $paydebt){
+    public function payDebt($id_debt, $paydebt, $id_turn){
         try{
             $fecha = date("Y-m-d H:i:s");
             $sql = 'update debt set debt_cancelled = debt_cancelled + ? where id_debt = ?';
@@ -52,10 +52,11 @@ class Debt{
                 $id_debt
             ]);
 
-            $sql2 = 'insert into debtpay (id_debt, debtpay_mont, debtpay_date) values (?,?,?)';
+            $sql2 = 'insert into debtpay (id_debt, id_turn, debtpay_mont, debtpay_date) values (?,?,?,?)';
             $stm2 = $this->pdo->prepare($sql2);
             $stm2->execute([
                 $id_debt,
+                $id_turn,
                 $paydebt,
                 $fecha
             ]);
@@ -87,7 +88,7 @@ class Debt{
             $sql = 'update saleproduct set saleproduct_cancelled = ? where id_saleproduct = ?';
             $stm = $this->pdo->prepare($sql);
             $stm->execute([
-                'true',
+                'false',
                 $id_saleproduct
             ]);
             $result = 1;
@@ -98,7 +99,7 @@ class Debt{
         return $result;
     }
 
-    public function payDebtrent($id_debtrent, $paydebt){
+    public function payDebtrent($id_debtrent, $paydebt, $id_turn){
         try{
             $fecha = date("Y-m-d H:i:s");
             $sql = 'update debtrent set debtrent_cancelled = debtrent_cancelled + ? where id_debtrent = ?';
@@ -108,10 +109,11 @@ class Debt{
                 $id_debtrent
             ]);
 
-            $sql2 = 'insert into debtrentpay (id_debtrent, debtrentpay_mont, debtrent_date) values(?,?,?)';
+            $sql2 = 'insert into debtrentpay (id_debtrent, id_turn, debtrentpay_mont, debtrent_date) values(?,?,?,?)';
             $stm2 = $this->pdo->prepare($sql2);
             $stm2->execute([
                 $id_debtrent,
+                $id_turn,
                 $paydebt,
                 $fecha
             ]);
@@ -144,7 +146,7 @@ class Debt{
             $sql = 'update salerent set salerent_cancelled = ? where id_salerent = ?';
             $stm = $this->pdo->prepare($sql);
             $stm->execute([
-                'true',
+                'false',
                 $id_salerent
             ]);
             $result = 1;

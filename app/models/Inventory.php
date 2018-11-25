@@ -379,7 +379,7 @@ class Inventory{
     }
 
     //Actualizar Stock
-    public function saveProductstock($stock, $id){
+    public function saveProductstock($stock, $id, $turn){
         try {
             $sql = 'update product set product_stock = product_stock + ? where id_product = ?';
             $stm = $this->pdo->prepare($sql);
@@ -389,12 +389,13 @@ class Inventory{
             ]);
             $fechahora = date("Y-m-d H:i:s");
 
-            $sql2 = 'insert into stocklog (id_product, stocklog_added, stocklog_date) values (?,?,?)';
+            $sql2 = 'insert into stocklog (id_product, stocklog_added, stocklog_date, id_turn) values (?,?,?,?)';
             $stm2 = $this->pdo->prepare($sql2);
             $stm2->execute([
                 $id,
                 $stock,
-                $fechahora
+                $fechahora,
+                $turn
             ]);
             $result = 1;
         } catch (Exception $e){

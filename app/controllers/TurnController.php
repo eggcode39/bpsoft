@@ -67,7 +67,10 @@ class TurnController{
     public function change(){
         try{
             $id_turn = $_POST['id'];
-            $result = $this->turn->change($id_turn);
+            $result1 = $this->turn->change($id_turn);
+            $productos = $this->turn->listP();
+            $result = $this->turn->setStock($productos, $id_turn);
+
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'Turn|change');
             $result = 2;

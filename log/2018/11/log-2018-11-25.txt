@@ -1,0 +1,192 @@
+2018-11-25 00:49:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 00:49:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 00:49:22[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 00:49:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 00:49:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 00:49:55[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:09:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:09:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:09:25[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:09:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:09:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:09:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:09:50[UTC -5] [ip] ::1 [location] Expense|all [text] Call to undefined method ExpenseController::all()
+2018-11-25 02:11:02[UTC -5] [ip] ::1 [location] Expense|list [text] SIN PERMISOS SUFICIENTES
+2018-11-25 02:16:40[UTC -5] [ip] ::1 [location] Expense|all [text] SIN PERMISOS SUFICIENTES
+2018-11-25 02:36:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:36:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:36:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:36:45[UTC -5] [ip] ::1 [location] Report|day [text] Call to undefined method Report::all_expenses()
+2018-11-25 02:38:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:38:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:38:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:39:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:39:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:39:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:40:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:40:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:40:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:48:16[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:48:16[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:48:16[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:48:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:48:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:48:37[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:49:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:49:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:49:00[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:41[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:55:59[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:56:19[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:12[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:43[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:57:48[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:46[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:58:50[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:35[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:35[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:35[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-25 02:59:40[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+

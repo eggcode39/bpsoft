@@ -99,4 +99,44 @@ class Turn{
         }
         return $return;
     }
+
+    //Funcion Especial para Listar Los Productos
+    public function listP(){
+        try{
+            $sql = 'select * from product';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Turn|listP');
+            $result = 0;
+        }
+        return $result;
+    }
+
+    public function setStock($productos, $id_turn){
+        try {
+            $sql = 'insert into startproduct(id_turn, id_product, startproduct_stock) values ';
+            $firstvalue = true;
+            foreach ($productos as $p){
+                if($firstvalue){
+                    $sql = $sql . '('.$id_turn.','.$p->id_product.','.$p->product_stock.')';
+                    $firstvalue = false;
+                } else {
+                    $sql = $sql . ',('.$id_turn.','.$p->id_product.','.$p->product_stock.')';
+                }
+
+            }
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = 1;
+
+        } catch (Exception $e){
+            $error = $e->getMessage();
+            $this->log->insert($error, "Turn|setStock");
+            $result = 2;
+        }
+        return $result;
+
+    }
 }

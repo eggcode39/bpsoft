@@ -29,4 +29,45 @@ class Active{
         }
         return $return;
     }
+
+    public function getTurnactiveall(){
+        try{
+            $sql = 'select * from turn where turn_active = 1 limit 1';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $return = $stm->fetch();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Turn|getTurnactive');
+            $return = 0;
+        }
+        return $return;
+    }
+
+    public function getTurnactiveall_id($id){
+        try{
+            $sql = 'select * from turn where id_turn = ?';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([
+                $id
+            ]);
+            $return = $stm->fetch();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Turn|getTurnactiveall_id');
+            $return = 0;
+        }
+        return $return;
+    }
+
+    public function getAllTurns(){
+        try{
+            $sql = 'select * from turn where turn_wasactive = 1 order by id_turn desc ';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $return = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Turn|getAllTurns');
+            $return = 0;
+        }
+        return $return;
+    }
 }

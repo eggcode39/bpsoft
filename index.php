@@ -15,14 +15,17 @@ require 'core/Database.php';
 require 'app/models/Log.php';
 //Levantamiento de registro de roles y permisos
 require 'app/models/Menu.php';
+//Inicio clase para la encriptacion de contenido
+require 'app/models/Crypt.php';
+
+
 $errores = new Log();
 $vistas = new Menu();
 
 $atun = 'atun con papas';
 
 //echo var_dump($permisos);
-//Inicio clase para la encriptacion de contenido
-require 'app/models/Crypt.php';
+
 
 // Errores de PHP a Try/Catch
 // Falta mejorar esta vaina porque puto el que lo lea

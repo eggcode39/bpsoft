@@ -43,9 +43,9 @@ class DebtController{
             $id_saleproduct = $_POST['id_saleproduct'];
             $mont = $_POST['mont'];
 
-            $result = $this->debt->payDebt($id_debt, $mont);
+            $result = $this->debt->payDebt($id_debt, $mont, $id_turn);
             if($mont == $debt_forpay){
-                $changestatusrent = $this->debt->updateDebt($id_debt);
+                $changestatus = $this->debt->updateDebt($id_debt);
                 $changestatussale = $this->debt->updateStatussaleproduct($id_saleproduct);
             }
 
@@ -65,7 +65,7 @@ class DebtController{
             $id_salerent = $_POST['id_salerent'];
             $mont = $_POST['mont'];
 
-            $result = $this->debt->payDebtrent($id_debtrent, $mont);
+            $result = $this->debt->payDebtrent($id_debtrent, $mont, $id_turn);
             if($mont == $debt_forpay){
                 $changestatusrent = $this->debt->updateDebtrent($id_debtrent);
                 $changestatussale = $this->debt->updateStatussalerent($id_salerent);

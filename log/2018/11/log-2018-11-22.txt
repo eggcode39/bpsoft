@@ -1,0 +1,78 @@
+2018-11-22 13:15:21[UTC -5] [ip] 127.0.0.1 [location] Turn|listP [text] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gestionbillarbd.products' doesn't exist
+2018-11-22 13:15:21[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\models\Turn.php: 121[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-22 13:15:21[UTC -5] [ip] 127.0.0.1 [location] Turn|setStock [text] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+2018-11-22 18:19:06[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\turn\seeall.php: 51[MESSAGGE]Undefined variable: turns
+
+2018-11-22 18:19:06[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\turn\seeall.php: 52[MESSAGGE]Undefined variable: turns
+
+2018-11-22 18:19:06[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\turn\seeall.php: 52[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-11-22 18:24:28[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\report\day.php: 31[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 18:24:28[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\report\day.php: 32[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 18:51:37[UTC -5] [ip] ::1 [location] Inventory|addProductstock [text] SIN PERMISOS SUFICIENTES
+2018-11-22 19:50:26[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 39[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-11-22 19:50:26[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 19:50:26[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 39[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-11-22 19:50:26[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 19:50:26[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 39[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-11-22 19:50:26[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 19:50:26[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 4096 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 39[MESSAGGE]Object of class stdClass could not be converted to string
+
+2018-11-22 19:50:26[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 19:57:08[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 19:57:08[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 19:57:08[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 20:07:20[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 20:07:20[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 20:07:20[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 20:12:50[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 20:12:50[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 20:12:51[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 20:57:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 46[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-22 20:57:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 47[MESSAGGE]Undefined property: stdClass::$user_last_login
+
+2018-11-22 20:57:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 59[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-22 20:57:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 60[MESSAGGE]Undefined property: stdClass::$user_last_login
+
+2018-11-22 20:58:11[UTC -5] [ip] 127.0.0.1 [location] Permit|add [text] Call to undefined method PermitController::add()
+2018-11-22 21:02:57[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 21:02:57[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 21:02:57[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 21:03:35[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 21:03:35[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 21:03:35[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-22 21:15:55[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 46[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-22 21:15:55[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 47[MESSAGGE]Undefined property: stdClass::$user_last_login
+
+2018-11-22 21:15:55[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 59[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-22 21:15:55[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 60[MESSAGGE]Undefined property: stdClass::$user_last_login
+

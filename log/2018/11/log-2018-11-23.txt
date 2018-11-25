@@ -1,0 +1,26 @@
+2018-11-23 12:41:55[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 12:41:55[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 12:41:55[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 12:42:19[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 12:42:19[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 12:42:19[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 17:37:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 17:37:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 17:37:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-11-23 18:00:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 46[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-23 18:00:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 47[MESSAGGE]Undefined property: stdClass::$user_last_login
+
+2018-11-23 18:00:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 59[MESSAGGE]Undefined property: stdClass::$user_email
+
+2018-11-23 18:00:59[UTC -5] [ip] 127.0.0.1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\LoginController.php: 60[MESSAGGE]Undefined property: stdClass::$user_last_login
+

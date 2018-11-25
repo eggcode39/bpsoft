@@ -112,7 +112,8 @@ class Sell{
 
     public function insertSaledetail($id_saleproduct,$id_productforsale,$sale_productname,$sale_unid, $sale_price,$stocksale){
         try{
-            $sql = 'insert into saledetail (id_saleproduct, id_productforsale, sale_productname, sale_unid, sale_price, sale_productsselled) values (?,?,?,?,?,?)';
+            $totalproductsselled = $sale_unid * $stocksale;
+            $sql = 'insert into saledetail (id_saleproduct, id_productforsale, sale_productname, sale_unid, sale_price, sale_productsselled, sale_productstotalselled) values (?,?,?,?,?,?,?)';
             $stm = $this->pdo->prepare($sql);
             $stm->execute([
                 $id_saleproduct,
@@ -120,7 +121,8 @@ class Sell{
                 $sale_productname,
                 $sale_unid,
                 $sale_price,
-                $stocksale
+                $stocksale,
+                $totalproductsselled
             ]);
             $result = 1;
         } catch (Exception $e){
