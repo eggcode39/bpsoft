@@ -110,7 +110,7 @@
 </div>
 
 <script>
-
+    setTimeout('refrescar()', 5000);
     function preguntarSiNo(id_salerent, id_location, id_locationrent){
         alertify.confirm('Finalizar Alquiler','¿Seguro que desea finalizar está sesión?',
             function(){ finalizar(id_salerent, id_location, id_locationrent) }
@@ -134,6 +134,10 @@
                 }
             }
         });
+    }
+
+    function refrescar() {
+        location.reload();
     }
 
 </script>

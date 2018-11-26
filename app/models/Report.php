@@ -152,6 +152,24 @@ class Report{
         return $result;
     }
 
+    //Calcular ganancias Productos
+    public function total_products($turn){
+        try{
+            $sql = "select sum(sp.saleproduct_total) total from saleproduct sp inner join saledetail s on sp.id_saleproduct = s.id_saleproduct inner join productforsale p on s.id_productforsale = p.id_productforsale
+                    where sp.id_turn = ?  and sp.saleproduct_total <> 0 and sp.saleproduct_cancelled <> 'false'";
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([
+                $turn->id_turn
+            ]);
+            $r = $stm->fetch();
+            $result = $r->total;
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Report|total_per_product');
+            $result = 0;
+        }
+        return $result;
+    }
+
     //Calcular ganancias Alquiler
     public function total_rent($turn){
         try{
@@ -218,4 +236,22 @@ class Report{
         }
         return $result;
     }
+
+    public function all_expense_number($turn){
+        try{
+            $sql = 'select sum(expense_mont) total from expense where id_turn = ?';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([
+                $turn->id_turn
+            ]);
+            $r = $stm->fetch();
+            $result = $r->total;
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Report|total_rent');
+            $result = 0;
+        }
+        return $result;
+    }
+
+
 }

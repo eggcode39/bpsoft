@@ -22,9 +22,9 @@
     <!--===============================================================================================-->
 
     <!-- Alertify -->
-    <script src="<?php echo _STYLES_;?>alertifyjs/alertify.js"></script>
-    <link rel="stylesheet" type="text/css" href="<?php echo _STYLES_;?>alertifyjs/css/alertify.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo _STYLES_;?>alertifyjs/css/themes/default.css">
+    <script src="<?php echo  _SERVER_ . _STYLES_;?>alertifyjs/alertify.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo _SERVER_ . _STYLES_;?>alertifyjs/css/alertify.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo _SERVER_ . _STYLES_;?>alertifyjs/css/themes/default.css">
 
 </head>
 <body>

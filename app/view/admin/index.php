@@ -22,14 +22,14 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>44</h3>
+              <h3><?php echo $users;?></h3>
 
               <p>Usuarios Registrados</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="#" class="small-box-footer">Ver Más <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="#" class="small-box-footer">Nosotros Creemos En Ti ♥<i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -37,14 +37,14 @@
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>S/. 1000</h3>
+              <h3>S/. <?php echo $final_report;?></h3>
 
               <p>Ganancias Del Dia</p>
             </div>
             <div class="icon">
               <i class="ion ion-pie-graph"></i>
             </div>
-            <a href="#" class="small-box-footer">Ver Más <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="<?php echo _SERVER_;?>Report/day" class="small-box-footer">Ver Más <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
