@@ -40,6 +40,17 @@
                                 <label >Nombre</label>
                                 <input type="text" class="form-control" id="location_name" placeholder="Ingresar Locacion" value="<?php echo $location->location_name;?>">
                             </div>
+                            <div class="form-group">
+                                <label >Tipo de Locacion</label>
+                                <select class="form-control" id="location_type" >
+                                    <?php
+                                    foreach ($type as $m){
+                                        ?>
+                                        <option <?php echo ($m->id_typelocation == $location->id_typelocation) ? 'selected' : '';?> value="<?php echo $m->id_typelocation?>"><?php echo $m->typelocation_name?></option><?php
+                                    }
+                                    ?>
+                                </select>
+                            </div>
                         </div>
                         <!-- /.box-body -->
 
@@ -64,6 +75,7 @@
         var valor = "correcto";
         var id_location = <?php echo $location->id_location;?>;
         var location_name = $('#location_name').val();
+        var location_type = $('#location_type').val();
 
         if(location_name == ""){
             alertify.error('El campo Nombre está vacío');
@@ -76,7 +88,8 @@
 
         if (valor == "correcto"){
             var cadena = "id_location=" + id_location +
-                "&location_name=" + location_name;
+                "&location_name=" + location_name +
+                "&location_type=" + location_type;
             $.ajax({
                 type:"POST",
                 url:"<?php echo _SERVER_;?>api/Location/save",

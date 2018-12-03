@@ -33,6 +33,7 @@ class LocationController{
 
     public function add(){
         $navs = $this->menu->listMenu($this->crypt->decrypt($_COOKIE['role'],_PASS_) ?? $this->crypt->decrypt($_SESSION['role'],_PASS_));
+        $type = $this->location->listTypelocation();
         require _VIEW_PATH_ . 'header.php';
         require _VIEW_PATH_ . 'navbar.php';
         require _VIEW_PATH_ . 'location/add.php';
@@ -43,6 +44,7 @@ class LocationController{
         $id = $_GET['id'];
         $navs = $this->menu->listMenu($this->crypt->decrypt($_COOKIE['role'],_PASS_) ?? $this->crypt->decrypt($_SESSION['role'],_PASS_));
         $location= $this->location->listLocation($id);
+        $type = $this->location->listTypelocation();
         require _VIEW_PATH_ . 'header.php';
         require _VIEW_PATH_ . 'navbar.php';
         require _VIEW_PATH_ . 'location/edit.php';
@@ -56,9 +58,11 @@ class LocationController{
             if(isset($_POST['id_location'])){
                 $model->id_location = $_POST['id_location'];
                 $model->location_name= $_POST['location_name'];
+                $model->location_type = $_POST['location_type'];
                 $result = $this->location->save($model);
             } else {
                 $model->location_name= $_POST['location_name'];
+                $model->location_type = $_POST['location_type'];
                 $result = $this->location->save($model);
             }
 

@@ -33,30 +33,88 @@
         </div>
         <br>
         <!-- /.row (main row) -->
-        <div class="row">
-            <div class="col-lg-3" >
-                <div class="col-xs-11" style="background-color: green; height: 150px;">
-                    <center><h3>BILLAR</h3></center>
-                    <center><h4>Hora Fin: 22:22:22</h4></center>
+        <div>
+            <center><h2>BILLAR</h2></center>
+            <div class="row">
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: green; height: 150px; border-radius: 20px;">
+                        <center><h3>BILLAR</h3></center>
+                        <center><h4>LIBRE</h4></center>
+                        <center><a class="btn btn-grande btn-success btn-xs" type="button" href="">Alquilar</a></center>
+                    </div>
+                </div>
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: #3c8dbc; height: 150px; border-radius: 20px;" >
+                        <center><h3>BILLAR</h3></center>
+                        <center><h4>Hora Fin: 22:22:22</h4></center>
+                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
+                    </div>
+                </div>
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: yellow; height: 150px; border-radius: 20px;">
+                        <center><h3>BILLAR</h3></center>
+                        <center><h4>Hora Fin: 22:22:22</h4></center>
+                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
+                    </div>
+                </div>
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: red; height: 150px; border-radius: 20px;">
+                        <center><h3>BILLAR</h3></center>
+                        <center><h4>Hora Fin: 22:22:22</h4></center>
+                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3" >
-                <div class="col-xs-11" style="background-color: red; height: 150px; border-radius: 20px;">
-                    <center><h3>BILLAR</h3></center>
-                    <center><h4>Hora Fin: 22:22:22</h4></center>
-                    <center><a class="btn btn-grande btn-success btn-xs" type="button" href="">Alquilar</a></center>
+            <br>
+            <div class="row">
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: green; height: 150px; border-radius: 20px;">
+                        <center><h3>BILLAR</h3></center>
+                        <center><h4>LIBRE</h4></center>
+                        <center><a class="btn btn-grande btn-success btn-xs" type="button" href="">Alquilar</a></center>
+                    </div>
+                </div>
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: #3c8dbc; height: 150px; border-radius: 20px;" >
+                        <center><h3>BILLAR</h3></center>
+                        <center><h4>Hora Fin: 22:22:22</h4></center>
+                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3" >
-                <div class="col-xs-11" style="background-color: yellow; height: 100px;">
-                    <center><h3>BILLAR</h3></center>
-                    <center><h4>Hora Fin: 22:22:22</h4></center>
+        </div>
+        <br><br>
+
+        <div>
+            <center><h2>PLAY-STATION</h2></center>
+            <div class="row">
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: green; height: 150px; border-radius: 20px;">
+                        <center><h3>PLAY</h3></center>
+                        <center><h4>LIBRE</h4></center>
+                        <center><a class="btn btn-grande btn-success btn-xs" type="button" href="">Alquilar</a></center>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3" >
-                <div class="col-xs-11" style="background-color: blue; height: 100px;">
-                    <center><h3>BILLAR</h3></center>
-                    <center><h4>Hora Fin: 22:22:22</h4></center>
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: #3c8dbc; height: 150px; border-radius: 20px;" >
+                        <center><h3>PLAY</h3></center>
+                        <center><h4>Hora Fin: 22:22:22</h4></center>
+                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
+                    </div>
+                </div>
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: yellow; height: 150px; border-radius: 20px;">
+                        <center><h3>PLAY</h3></center>
+                        <center><h4>Hora Fin: 22:22:22</h4></center>
+                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
+                    </div>
+                </div>
+                <div class="col-lg-3" >
+                    <div class="col-xs-11" style="background-color: red; height: 150px; border-radius: 20px;">
+                        <center><h3>PLAY</h3></center>
+                        <center><h4>Hora Fin: 22:22:22</h4></center>
+                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
+                    </div>
                 </div>
             </div>
         </div>

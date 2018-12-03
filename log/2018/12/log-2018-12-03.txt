@@ -1,0 +1,12 @@
+2018-12-03 12:28:34[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\location\edit.php: 49[MESSAGGE]Trying to get property of non-object
+
+2018-12-03 12:28:34[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\location\edit.php: 49[MESSAGGE]Trying to get property of non-object
+
+2018-12-03 12:28:34[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\location\edit.php: 49[MESSAGGE]Trying to get property of non-object
+
+2018-12-03 12:28:34[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\location\edit.php: 49[MESSAGGE]Trying to get property of non-object
+
+2018-12-03 12:28:34[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\location\edit.php: 49[MESSAGGE]Trying to get property of non-object
+
+2018-12-03 12:28:34[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\view\location\edit.php: 49[MESSAGGE]Trying to get property of non-object
+

@@ -19,7 +19,7 @@ class Location{
     //Listar Locaciones Registradas
     public function list(){
         try{
-            $sql = "Select * from location order by location_name asc";
+            $sql = "Select * from location l inner join typelocation t on l.id_typelocation = t.id_typelocation order by location_name asc";
             $stm = $this->pdo->prepare($sql);
             $stm->execute();
 
@@ -36,21 +36,24 @@ class Location{
     public function save($model){
         try {
             if(empty($model->id_location)){
-                $sql = 'insert into location (location_name, location_status) values(?,?)';
+                $sql = 'insert into location (location_name, location_status, id_typelocation) values(?,?,?)';
                 $stm = $this->pdo->prepare($sql);
                 $stm->execute([
                     $model->location_name,
-                    0
+                    0,
+                    $model->location_type
                 ]);
 
             } else {
                 $sql = "update location
-                set location_name = ?
+                set location_name = ?,
+                id_typelocation = ?
                 where id_location = ?";
 
                 $stm = $this->pdo->prepare($sql);
                 $stm->execute([
                     $model->location_name,
+                    $model->location_type,
                     $model->id_location
                 ]);
             }
@@ -95,4 +98,19 @@ class Location{
         return $result;
     }
 
+    public function listTypelocation()
+    {
+        try{
+            $sql = "Select * from typelocation";
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Location|listTypelocation');
+            $result = 2;
+        }
+
+        return $result;
+    }
 }

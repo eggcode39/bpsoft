@@ -40,6 +40,7 @@
                     <tr>
                         <th>ID Interno</th>
                         <th>Nombre</th>
+                        <th>Tipo</th>
                         <th>Estado</th>
                         <th>Acción</th>
                     </tr>
@@ -52,7 +53,8 @@
                         <tr>
                             <td><?php echo $number;?></td>
                             <td><?php echo $m->location_name;?></td>
-                            <td><?php echo ($m->location_status = 1) ? 'ACTIVO' : 'LIBRE';?></td>
+                            <td><?php echo $m->typelocation_name;?></td>
+                            <td><?php echo ($m->location_status == 1) ? 'ACTIVO' : 'LIBRE';?></td>
                             <td><a class="btn btn-chico btn-warning btn-xs" type="button" href="<?php echo _SERVER_;?>Location/edit/<?php echo $m->id_location;?>">Editar</a><a class="btn btn-chico btn-danger btn-xs" onclick="preguntarSiNo(<?php echo $m->id_location;?>)">Eliminar</a></td>
                         </tr>
                         <?php
@@ -64,6 +66,7 @@
                     <tr>
                         <th>ID Interno</th>
                         <th>Nombre</th>
+                        <th>Tipo</th>
                         <th>Estado</th>
                         <th>Acción</th>
                     </tr>

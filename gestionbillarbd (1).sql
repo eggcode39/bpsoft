@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-11-2018 a las 09:03:54
+-- Tiempo de generación: 03-12-2018 a las 18:36:17
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.0.27
 
@@ -42,7 +42,7 @@ CREATE TABLE `debt` (
 
 INSERT INTO `debt` (`id_debt`, `id_saleproduct`, `debt_total`, `debt_cancelled`, `debt_status`) VALUES
 (1, 9, 0.3, 0.1, 0),
-(2, 10, 0.6, 0, 0);
+(2, 10, 0.6, 0.6, 1);
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,8 @@ CREATE TABLE `debtpay` (
 --
 
 INSERT INTO `debtpay` (`id_debtpay`, `id_debt`, `id_turn`, `debtpay_mont`, `debtpay_date`) VALUES
-(1, 1, 7, 0.1, '2018-11-22 21:01:54');
+(1, 1, 7, 0.1, '2018-11-22 21:01:54'),
+(2, 2, 7, 0.6, '2018-11-25 11:33:40');
 
 -- --------------------------------------------------------
 
@@ -121,6 +122,7 @@ INSERT INTO `expense` (`id_expense`, `id_turn`, `expense_mont`, `expense_descrip
 
 CREATE TABLE `location` (
   `id_location` int(11) NOT NULL,
+  `id_typelocation` int(11) NOT NULL,
   `location_name` varchar(32) COLLATE utf8_spanish_ci NOT NULL,
   `location_status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -129,11 +131,13 @@ CREATE TABLE `location` (
 -- Volcado de datos para la tabla `location`
 --
 
-INSERT INTO `location` (`id_location`, `location_name`, `location_status`) VALUES
-(1, 'PS-1', 1),
-(2, 'PS-2', 0),
-(3, 'BILLAR-1', 0),
-(4, 'BILLAR-2', 0);
+INSERT INTO `location` (`id_location`, `id_typelocation`, `location_name`, `location_status`) VALUES
+(1, 2, 'PS-1', 0),
+(2, 2, 'PS-2', 0),
+(3, 1, 'BILLAR-1', 1),
+(4, 1, 'BILLAR-2', 0),
+(7, 2, 'PS-3', 0),
+(8, 1, 'BILLAR-3', 0);
 
 -- --------------------------------------------------------
 
@@ -152,7 +156,7 @@ CREATE TABLE `locationrent` (
 --
 
 INSERT INTO `locationrent` (`id_locationrent`, `id_salerent`, `id_location`) VALUES
-(1, 1, 1);
+(1, 2, 3);
 
 -- --------------------------------------------------------
 
@@ -180,9 +184,10 @@ INSERT INTO `menu` (`id_menu`, `menu_name`, `menu_icon`) VALUES
 (7, 'Personas', 'fa fa-user'),
 (8, 'Usuarios', 'fa fa-unlock-alt'),
 (9, 'Turnos', 'fa fa-code-fork'),
-(10, 'Reporte Diarios', 'fa fa-calendar-o'),
+(10, 'Reporte Del Dia', 'fa fa-calendar-o'),
 (11, 'Reporte Turnos', 'fa fa-calendar'),
-(12, 'Egresos', 'fa fa-dashboard');
+(12, 'Egresos', 'fa fa-book'),
+(13, 'Locaciones Alquiler', 'fa fa-compass');
 
 -- --------------------------------------------------------
 
@@ -255,10 +260,13 @@ INSERT INTO `optionmenu` (`id_option`, `id_menu`, `option_name`, `option_url`, `
 (30, 9, 'Gestionar Turnos', 'Turn/seeAll', 1),
 (31, 9, 'Agregar Turno', 'Turn/add', 1),
 (32, 10, 'Ver Reporte del Dia', 'Report/day', 1),
-(33, 11, 'Ver Reportes', 'Report/all', 1),
+(33, 11, 'Ver Reportes por Turnos', 'Report/all', 1),
 (34, 12, 'Agregar Egreso', 'Expense/add', 1),
 (35, 12, 'Ver Egresos', 'Expense/all', 1),
-(36, 12, 'Editar Egreso', 'Expense/edit', 0);
+(36, 12, 'Editar Egreso', 'Expense/edit', 0),
+(37, 13, 'Agregar Locacion', 'Location/add', 1),
+(38, 13, 'Ver Locaciones', 'Location/all', 1),
+(39, 13, 'Editar Locacion', 'Location/edit', 0);
 
 -- --------------------------------------------------------
 
@@ -315,7 +323,9 @@ INSERT INTO `permit` (`id_permit`, `permit_controller`, `permit_action`, `permit
 (40, 'Turn', 'change', 1),
 (41, 'Expense', 'save', 1),
 (42, 'Expense', 'delete', 1),
-(43, 'Report', 'set_turn', 1);
+(43, 'Report', 'set_turn', 1),
+(44, 'Location', 'save', 1),
+(45, 'Location', 'delete', 1);
 
 -- --------------------------------------------------------
 
@@ -462,7 +472,8 @@ INSERT INTO `rolemenu` (`id_rolemenu`, `id_role`, `id_menu`) VALUES
 (9, 2, 9),
 (10, 2, 10),
 (11, 2, 11),
-(12, 2, 12);
+(12, 2, 12),
+(13, 2, 13);
 
 -- --------------------------------------------------------
 
@@ -518,7 +529,9 @@ INSERT INTO `rolepermit` (`id_rolepermit`, `id_role`, `id_permit`) VALUES
 (41, 2, 40),
 (42, 2, 41),
 (43, 2, 42),
-(44, 2, 43);
+(44, 2, 43),
+(45, 2, 44),
+(46, 2, 45);
 
 -- --------------------------------------------------------
 
@@ -613,7 +626,8 @@ CREATE TABLE `salerent` (
 --
 
 INSERT INTO `salerent` (`id_salerent`, `id_rent`, `id_person`, `id_user`, `id_location`, `id_turn`, `salerent_date`, `salerent_start`, `salerent_finish`, `salerent_total`, `salerent_finished`, `salerent_cancelled`) VALUES
-(1, 1, 3, 3, 1, 7, '2018-11-22', '21:05:03', '23:05:03', 8, 0, 'true');
+(1, 1, 3, 3, 1, 7, '2018-11-22', '21:05:03', '23:05:03', 8, 1, 'true'),
+(2, 2, 2, 1, 3, 7, '2018-12-02', '19:24:19', '20:24:19', 6, 0, 'true');
 
 -- --------------------------------------------------------
 
@@ -688,6 +702,25 @@ INSERT INTO `turn` (`id_turn`, `turn_datestart`, `turn_datefinish`, `turn_active
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `typelocation`
+--
+
+CREATE TABLE `typelocation` (
+  `id_typelocation` int(11) NOT NULL,
+  `typelocation_name` varchar(120) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `typelocation`
+--
+
+INSERT INTO `typelocation` (`id_typelocation`, `typelocation_name`) VALUES
+(1, 'BILLAR'),
+(2, 'PLAY STATION 4');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `user`
 --
 
@@ -754,7 +787,8 @@ ALTER TABLE `expense`
 -- Indices de la tabla `location`
 --
 ALTER TABLE `location`
-  ADD PRIMARY KEY (`id_location`);
+  ADD PRIMARY KEY (`id_location`),
+  ADD KEY `id_typelocation` (`id_typelocation`);
 
 --
 -- Indices de la tabla `locationrent`
@@ -887,6 +921,12 @@ ALTER TABLE `turn`
   ADD PRIMARY KEY (`id_turn`);
 
 --
+-- Indices de la tabla `typelocation`
+--
+ALTER TABLE `typelocation`
+  ADD PRIMARY KEY (`id_typelocation`);
+
+--
 -- Indices de la tabla `user`
 --
 ALTER TABLE `user`
@@ -908,7 +948,7 @@ ALTER TABLE `debt`
 -- AUTO_INCREMENT de la tabla `debtpay`
 --
 ALTER TABLE `debtpay`
-  MODIFY `id_debtpay` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_debtpay` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `debtrent`
@@ -932,7 +972,7 @@ ALTER TABLE `expense`
 -- AUTO_INCREMENT de la tabla `location`
 --
 ALTER TABLE `location`
-  MODIFY `id_location` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_location` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `locationrent`
@@ -944,7 +984,7 @@ ALTER TABLE `locationrent`
 -- AUTO_INCREMENT de la tabla `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id_menu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_menu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `object`
@@ -956,13 +996,13 @@ ALTER TABLE `object`
 -- AUTO_INCREMENT de la tabla `optionmenu`
 --
 ALTER TABLE `optionmenu`
-  MODIFY `id_option` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id_option` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT de la tabla `permit`
 --
 ALTER TABLE `permit`
-  MODIFY `id_permit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id_permit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT de la tabla `person`
@@ -998,13 +1038,13 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT de la tabla `rolemenu`
 --
 ALTER TABLE `rolemenu`
-  MODIFY `id_rolemenu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_rolemenu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `rolepermit`
 --
 ALTER TABLE `rolepermit`
-  MODIFY `id_rolepermit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id_rolepermit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT de la tabla `saledetail`
@@ -1022,7 +1062,7 @@ ALTER TABLE `saleproduct`
 -- AUTO_INCREMENT de la tabla `salerent`
 --
 ALTER TABLE `salerent`
-  MODIFY `id_salerent` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_salerent` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `startproduct`
@@ -1041,6 +1081,12 @@ ALTER TABLE `stocklog`
 --
 ALTER TABLE `turn`
   MODIFY `id_turn` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT de la tabla `typelocation`
+--
+ALTER TABLE `typelocation`
+  MODIFY `id_typelocation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `user`
@@ -1083,6 +1129,12 @@ ALTER TABLE `debtrentpay`
 --
 ALTER TABLE `expense`
   ADD CONSTRAINT `expense_ibfk_1` FOREIGN KEY (`id_turn`) REFERENCES `turn` (`id_turn`);
+
+--
+-- Filtros para la tabla `location`
+--
+ALTER TABLE `location`
+  ADD CONSTRAINT `location_ibfk_1` FOREIGN KEY (`id_typelocation`) REFERENCES `typelocation` (`id_typelocation`);
 
 --
 -- Filtros para la tabla `locationrent`
