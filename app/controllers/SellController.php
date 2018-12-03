@@ -57,7 +57,7 @@ class SellController{
         $locations = $this->inventory->listlocations();
         require _VIEW_PATH_ . 'header.php';
         require _VIEW_PATH_ . 'navbar.php';
-        require _VIEW_PATH_ . 'sell/viewrents.php';
+        require _VIEW_PATH_ . 'sell/viewrents2.php';
         require _VIEW_PATH_ . 'footer.php';
 
     }
