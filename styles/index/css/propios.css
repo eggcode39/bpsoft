@@ -19,6 +19,7 @@
     font-size: 20px;
 }
 
-.billar{
-    background-color: red; height: 150px; border-radius: 20px;
+.boton-alquiler{
+    height: 150px;
+    border-radius: 20px;
 }

@@ -26,5 +26,5 @@ define('_JUST_HTTP_', true);
 define('_COOKIE_PATH_', '/mycookies/');
 
 //Version
-define('_VERSION_','0.9.9');
+define('_VERSION_','1.0');
 define('_MYSITE_','http://huevito.com');

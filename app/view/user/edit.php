@@ -68,7 +68,7 @@
                         <!-- /.box-body -->
 
                         <div class="box-footer">
-                            <button class="btn btn-primary" onclick="add()">Agregar Usuario</button>
+                            <button class="btn btn-primary" onclick="add()">Editar Usuario</button>
                         </div>
                     </div>
                 </div>

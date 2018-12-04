@@ -409,7 +409,6 @@ class Inventory{
 
     //Listar Locaciones Alquiler
     public function listlocations(){
-        $result = [];
         try {
             $sql = 'select * from location order by location_name asc';
             $stm = $this->pdo->prepare($sql);
@@ -424,7 +423,6 @@ class Inventory{
 
     //Ver si Locacion está disponible
     public function viewstatuslocacion(){
-        $result = [];
         try {
             $sql = 'select * from location l  inner join salerent order by location_name asc';
             $stm = $this->pdo->prepare($sql);
@@ -432,6 +430,32 @@ class Inventory{
             $result = $stm->fetchAll();
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'Sell|listlocations');
+            $result = 2;
+        }
+        return $result;
+    }
+
+    public function listTypelocations(){
+        try {
+            $sql = 'select * from typelocation order by typelocation_name asc';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute();
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Sell|listTypelocations');
+            $result = 2;
+        }
+        return $result;
+    }
+
+    public function selectLocationstype($id){
+        try {
+            $sql = 'select * from location l inner join typelocation t on l.id_typelocation = t.id_typelocation where t.id_typelocation = ?';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([$id]);
+            $result = $stm->fetchAll();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Sell|listTypelocations');
             $result = 2;
         }
         return $result;

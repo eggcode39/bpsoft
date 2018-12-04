@@ -17,7 +17,7 @@ class Menu{
     public function listMenu($id_role){
         $result = [];
         try{
-            $sql = "Select m.menu_name, m.menu_icon from role r inner join rolemenu rl on r.id_role = rl.id_role inner join menu m on m.id_menu = rl.id_menu where rl.id_role = ?";
+            $sql = "Select m.menu_name, m.menu_icon from role r inner join rolemenu rl on r.id_role = rl.id_role inner join menu m on m.id_menu = rl.id_menu where rl.id_role = ? and m.menu_show = 1";
             $stm = $this->pdo->prepare($sql);
             $stm->execute([$id_role]);
             $result = $stm->fetchAll();

@@ -33,92 +33,88 @@
         </div>
         <br>
         <!-- /.row (main row) -->
-        <div>
-            <center><h2>BILLAR</h2></center>
-            <div class="row">
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: green; height: 150px; border-radius: 20px;">
-                        <center><h3>BILLAR</h3></center>
-                        <center><h4>LIBRE</h4></center>
-                        <center><a class="btn btn-grande btn-success btn-xs" type="button" href="">Alquilar</a></center>
-                    </div>
-                </div>
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: #3c8dbc; height: 150px; border-radius: 20px;" >
-                        <center><h3>BILLAR</h3></center>
-                        <center><h4>Hora Fin: 22:22:22</h4></center>
-                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
-                    </div>
-                </div>
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: yellow; height: 150px; border-radius: 20px;">
-                        <center><h3>BILLAR</h3></center>
-                        <center><h4>Hora Fin: 22:22:22</h4></center>
-                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
-                    </div>
-                </div>
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: red; height: 150px; border-radius: 20px;">
-                        <center><h3>BILLAR</h3></center>
-                        <center><h4>Hora Fin: 22:22:22</h4></center>
-                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: green; height: 150px; border-radius: 20px;">
-                        <center><h3>BILLAR</h3></center>
-                        <center><h4>LIBRE</h4></center>
-                        <center><a class="btn btn-grande btn-success btn-xs" type="button" href="">Alquilar</a></center>
-                    </div>
-                </div>
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: #3c8dbc; height: 150px; border-radius: 20px;" >
-                        <center><h3>BILLAR</h3></center>
-                        <center><h4>Hora Fin: 22:22:22</h4></center>
-                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br>
+        <?php
+        $types = $this->inventory->listTypelocations();
+        foreach ($types as $t){
+            $location = $this->inventory->selectLocationstype($t->id_typelocation);
+            $cant = count($location);
+            if($cant != 0){
+                ?>
+                <div>
+                    <center><h2><?php echo $t->typelocation_name;?></h2></center>
+                    <?php
+                    $col = 0;
+                    foreach ($location as $m){
+                        if($col == 0){
+                            ?><div class="row"><?php
+                        }
+                        $col++;
 
-        <div>
-            <center><h2>PLAY-STATION</h2></center>
-            <div class="row">
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: green; height: 150px; border-radius: 20px;">
-                        <center><h3>PLAY</h3></center>
-                        <center><h4>LIBRE</h4></center>
-                        <center><a class="btn btn-grande btn-success btn-xs" type="button" href="">Alquilar</a></center>
-                    </div>
-                </div>
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: #3c8dbc; height: 150px; border-radius: 20px;" >
-                        <center><h3>PLAY</h3></center>
-                        <center><h4>Hora Fin: 22:22:22</h4></center>
-                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
-                    </div>
-                </div>
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: yellow; height: 150px; border-radius: 20px;">
-                        <center><h3>PLAY</h3></center>
-                        <center><h4>Hora Fin: 22:22:22</h4></center>
-                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
-                    </div>
-                </div>
-                <div class="col-lg-3" >
-                    <div class="col-xs-11" style="background-color: red; height: 150px; border-radius: 20px;">
-                        <center><h3>PLAY</h3></center>
-                        <center><h4>Hora Fin: 22:22:22</h4></center>
-                        <center><a class="btn btn-grande btn-warning btn-xs" type="button" href="">Finalizar</a></center>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        $info = $this->sell->selectLocationstatus($m->id_location);
+                        $estadol = '<a class="btn btn-grande btn-success btn-xs">LIBRE</a>';
+                        $inicio = 'LIBRE';
+                        $fin = '-';
+                        $accion = "<a class=\"btn btn-grande btn-success btn-xs\" type=\"button\" href=\"". _SERVER_ ."Sell/rent\">Alquilar</a>";
 
+                        $fondo = "style=\"background-color: green;\"";
+
+                        $estado = 0;
+                        if(isset($info->location_status)){
+                            $estado = $info->location_status;
+                        }
+                        if($estado == 1) {
+                            $estadol = '<a class="btn btn-grande btn-danger btn-xs">EN USO</a>';
+                            $fondo = "style=\"background-color: #3c8dbc;\"";
+                            //$inicio = $info->salerent_start;
+                            $fin = 'Fin:' . $info->salerent_finish;
+                            $accion = "<a class=\"btn btn-grande btn-warning btn-xs\" type=\"button\" onclick=\"preguntarSiNo(" . $info->id_salerent . "," . $m->id_location . "," . $info->id_locationrent. ")\">Finalizar</a>";
+                        }
+
+
+
+                        if(isset($info->salerent_finish)){
+                            $horaactual = date('H:i:s');
+                            $horafinal = $info->salerent_finish;
+
+                            $horaactual = strtotime($horaactual);
+                            $horaanticipada = strtotime( '+10 minute' ,$horaactual);
+                            $horafinal = strtotime($horafinal);
+
+                            if($horaactual > $horafinal){
+                                $fondo = "style=\"background-color: red;\"";
+                            } else if($horafinal < $horaanticipada){
+                                $fondo = "style=\"background-color: yellow;\"";
+                            }
+
+                        }
+
+
+
+                        ?>
+                        <div class="col-lg-3" >
+                            <div class="col-xs-11 boton-alquiler" <?php echo $fondo;?>>
+                                <center><h3><?php echo $m->location_name;?></h3></center>
+                                <center><h4><?php echo $fin;?></h4></center>
+                                <center><?php echo $accion;?></center>
+                            </div>
+                        </div>
+                        <?php
+                        if($col == 4){
+                            ?></div>
+                            <br><?php
+                            $col = 0;
+                        }
+
+                    }
+                    ?>
+                    </div>
+                            <br>
+                </div>
+                <br><br>
+                <?php
+            }
+        }
+        ?>
     </section>
     <!-- /.content -->
 </div>
