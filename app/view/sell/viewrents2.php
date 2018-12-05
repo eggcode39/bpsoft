@@ -147,7 +147,7 @@
     }
 
     function refrescar() {
-        //location.reload();
+        location.reload();
     }
 
 </script>

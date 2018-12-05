@@ -45,7 +45,7 @@
                             </div>
                             <div class="form-group">
                                 <label >Stock A Agregar</label>
-                                <input type="text" class="form-control" id="product_stock" placeholder="Ingresar Stock Producto..." value="0" >
+                                <input type="text" class="form-control" id="product_stock"  onkeypress="return valida(event)" placeholder="Ingresar Stock Producto..." value="0" >
                             </div>
                         </div>
                         <!-- /.box-body -->
@@ -67,6 +67,19 @@
 </div>
 
 <script type="text/javascript">
+    function valida(e){
+        tecla = (document.all) ? e.keyCode : e.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla==8){
+            return true;
+        }
+        // Patron de entrada, en este caso solo acepta numeros
+        patron =/[0-9]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
     function edit() {
         var valor = "correcto";
         var id_product = <?php echo $product->id_product;?>;

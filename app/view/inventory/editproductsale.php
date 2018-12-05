@@ -41,7 +41,7 @@
                             </div>
                             <div class="form-group">
                                 <label >Unidades a Vender</label>
-                                <input type="text" class="form-control" id="product_unid" value="<?php echo $productprice->product_unid;?>" placeholder="Ingresar Cantidad de Unidades a Vender...">
+                                <input type="text" class="form-control" onkeypress="return valida(event)"  id="product_unid" value="<?php echo $productprice->product_unid;?>" placeholder="Ingresar Cantidad de Unidades a Vender...">
                             </div>
                             <div class="form-group">
                                 <label >Precio Total</label>
@@ -67,6 +67,19 @@
 </div>
 
 <script type="text/javascript">
+    function valida(e){
+        tecla = (document.all) ? e.keyCode : e.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla==8){
+            return true;
+        }
+        // Patron de entrada, en este caso solo acepta numeros
+        patron =/[0-9]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
     function add() {
         var valor = "correcto";
         var id_productforsale = <?php echo $productprice->id_productforsale;?>;

@@ -46,11 +46,11 @@
                             </div>
                             <div class="form-group">
                                 <label >DNI Persona</label>
-                                <input type="text" class="form-control" id="person_dni" placeholder="Ingrese DNI Persona..." value="<?php echo $list->person_dni;?>">
+                                <input type="text" class="form-control" onkeypress="return valida(event)" maxlength="8" id="person_dni" placeholder="Ingrese DNI Persona..." value="<?php echo $list->person_dni;?>">
                             </div>
                             <div class="form-group">
                                 <label >Dirección Persona</label>
-                                <input type="text" class="form-control" id="person_address" placeholder="Ingrese Dirección Persona..." value="<?php echo $list->person_address;?>">
+                                <input type="text" class="form-control" onkeypress="return valida(event)" id="person_address" placeholder="Ingrese Dirección Persona..." value="<?php echo $list->person_address;?>">
                             </div>
                             <div class="form-group">
                                 <label >Celular o Telefono Persona</label>
@@ -83,6 +83,19 @@
 </div>
 
 <script type="text/javascript">
+    function valida(e){
+        tecla = (document.all) ? e.keyCode : e.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla==8){
+            return true;
+        }
+        // Patron de entrada, en este caso solo acepta numeros
+        patron =/[0-9]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
     function add() {
         var id_person = <?php echo $list->id_person;?>;
         var valor = "correcto";

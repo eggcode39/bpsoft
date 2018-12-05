@@ -124,14 +124,20 @@ class InventoryController{
     public function listObjects(){
         $navs = $this->menu->listMenu($this->crypt->decrypt($_COOKIE['role'],_PASS_) ?? $this->crypt->decrypt($_SESSION['role'],_PASS_));
         $objects = $this->inventory->listObjects();
+        $role = $this->crypt->decrypt($_COOKIE['role'],_PASS_) ?? $this->crypt->decrypt($_SESSION['role'],_PASS_);
         require _VIEW_PATH_ . 'header.php';
         require _VIEW_PATH_ . 'navbar.php';
-        require _VIEW_PATH_ . 'inventory/listobjects.php';
+        if($role == 2){
+            require _VIEW_PATH_ . 'inventory/listobjects.php';
+        } else {
+            require _VIEW_PATH_ . 'inventory/listobjects2.php';
+        }
         require _VIEW_PATH_ . 'footer.php';
     }
 
     public function addObject(){
         $navs = $this->menu->listMenu($this->crypt->decrypt($_COOKIE['role'],_PASS_) ?? $this->crypt->decrypt($_SESSION['role'],_PASS_));
+
         require _VIEW_PATH_ . 'header.php';
         require _VIEW_PATH_ . 'navbar.php';
         require _VIEW_PATH_ . 'inventory/addobject.php';
@@ -165,6 +171,10 @@ class InventoryController{
                 $model->product_stock = $_POST['product_stock'];
                 $result = $this->inventory->save($model);
             }
+
+            $id_product = $this->inventory->getProductID($_POST['product_name']);
+            $turn = $this->active->getTurnactive();
+            $inserStock = $this->inventory->setStockNew($id_product, $turn, $_POST['product_stock']);
 
         } catch (Exception $e){
             $this->log->insert($e->getMessage(), 'InventoryController|saveProduct');

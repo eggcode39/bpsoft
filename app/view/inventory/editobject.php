@@ -46,7 +46,7 @@
                             </div>
                             <div class="form-group">
                                 <label >Objeto Cantidad</label>
-                                <input type="text" class="form-control" id="object_total" placeholder="Ingresar Cantidad Objeto..." value="<?php echo $object->object_total;?>">
+                                <input type="text" class="form-control" id="object_total" onkeypress="return valida(event)" placeholder="Ingresar Cantidad Objeto..." value="<?php echo $object->object_total;?>">
                             </div>
                         </div>
                         <!-- /.box-body -->
@@ -68,6 +68,19 @@
 </div>
 
 <script type="text/javascript">
+    function valida(e){
+        tecla = (document.all) ? e.keyCode : e.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla==8){
+            return true;
+        }
+        // Patron de entrada, en este caso solo acepta numeros
+        patron =/[0-9]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
     function add() {
         var valor = "correcto";
         var id_object = value="<?php echo $object->id_object;?>";

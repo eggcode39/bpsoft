@@ -45,7 +45,7 @@
                             </div>
                             <div class="form-group">
                                 <label >Tiempo Alquiler(Minutos)</label>
-                                <input type="text" class="form-control" id="rent_timeminutes" placeholder="Ingresar Tiempo Alquiler..." value="<?php echo $rent->rent_timeminutes;?>">
+                                <input type="text" class="form-control" id="rent_timeminutes"  onkeypress="return valida(event)" placeholder="Ingresar Tiempo Alquiler..." value="<?php echo $rent->rent_timeminutes;?>">
                             </div>
                             <div class="form-group">
                                 <label >Precio Total</label>
@@ -71,6 +71,20 @@
 </div>
 
 <script type="text/javascript">
+    function valida(e){
+        tecla = (document.all) ? e.keyCode : e.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla==8){
+            return true;
+        }
+        // Patron de entrada, en este caso solo acepta numeros
+        patron =/[0-9]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
+
     function add() {
         var valor = "correcto";
         var id_rent = <?php echo $rent->id_rent;?>;

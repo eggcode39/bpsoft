@@ -1,0 +1,82 @@
+2018-12-04 11:28:26[UTC -5] [ip] ::1 [location] Sell|listTypelocations [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-12-04 11:28:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents2.php: 47[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-12-04 11:28:26[UTC -5] [ip] ::1 [location] Sell|listTypelocations [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-12-04 11:28:26[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents2.php: 47[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-12-04 11:30:10[UTC -5] [ip] ::1 [location] Sell|listTypelocations [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-12-04 11:30:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents2.php: 47[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-12-04 11:30:10[UTC -5] [ip] ::1 [location] Sell|listTypelocations [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-12-04 11:30:10[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents2.php: 47[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-12-04 11:32:01[UTC -5] [ip] ::1 [location] Sell|listTypelocations [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-12-04 11:32:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents2.php: 47[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-12-04 11:32:01[UTC -5] [ip] ::1 [location] Sell|listTypelocations [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-12-04 11:32:01[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents2.php: 47[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-12-04 11:33:23[UTC -5] [ip] ::1 [location] Sell|listTypelocations [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-12-04 11:33:23[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents2.php: 46[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-12-04 11:33:23[UTC -5] [ip] ::1 [location] Sell|listTypelocations [text] SQLSTATE[HY093]: Invalid parameter number: no parameters were bound
+2018-12-04 11:33:23[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 2 IN C:\xampp\htdocs\bpsoft\app\view\sell\viewrents2.php: 46[MESSAGGE]Invalid argument supplied for foreach()
+
+2018-12-04 12:32:38[UTC -5] [ip] ::1 [location] Permit|add [text] Call to undefined method PermitController::add()
+2018-12-04 12:45:07[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\UserController.php: 90[MESSAGGE]Undefined index: user_password
+
+2018-12-04 12:48:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 12:48:42[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 12:51:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 12:51:47[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 19:31:48[UTC -5] [ip] ::1 [location] Inventory|listProduct [text] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`gestionbillarbd`.`productforsale`, CONSTRAINT `productforsale_ibfk_1` FOREIGN KEY (`id_product`) REFERENCES `product` (`id_product`))
+2018-12-04 19:31:52[UTC -5] [ip] ::1 [location] Inventory|listProduct [text] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`gestionbillarbd`.`productforsale`, CONSTRAINT `productforsale_ibfk_1` FOREIGN KEY (`id_product`) REFERENCES `product` (`id_product`))
+2018-12-04 19:50:17[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 19:50:17[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 19:50:17[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 20:07:02[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 20:07:02[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 20:07:02[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 20:07:23[UTC -5] [ip] ::1 [location] Sell|viewRents [text] SIN PERMISOS SUFICIENTES
+2018-12-04 21:38:58[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\controllers\UserController.php: 90[MESSAGGE]Undefined index: user_password
+
+2018-12-04 22:28:02[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:28:02[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:28:44[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 42[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:28:44[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:45:29[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:48:06[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:50:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:50:44[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:51:09[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:51:18[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:51:28[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:51:30[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:51:45[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:51:52[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+
+2018-12-04 22:51:54[UTC -5] [ip] ::1 [location] Excepcion No Manejada [text] [LEVEL]: 8 IN C:\xampp\htdocs\bpsoft\app\models\Report.php: 59[MESSAGGE]Trying to get property of non-object
+

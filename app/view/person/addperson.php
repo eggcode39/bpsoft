@@ -45,15 +45,15 @@
                             </div>
                             <div class="form-group">
                                 <label >DNI Persona</label>
-                                <input type="text" class="form-control" id="person_dni" placeholder="Ingrese DNI Persona...">
+                                <input type="text" class="form-control" onkeypress="return valida(event)" id="person_dni" placeholder="Ingrese DNI Persona..." maxlength="8">
                             </div>
                             <div class="form-group">
                                 <label >Dirección Persona</label>
-                                <input type="text" class="form-control" id="person_address" placeholder="Ingrese DNI Persona...">
+                                <input type="text" class="form-control" id="person_address" placeholder="Ingrese Dirección Persona...">
                             </div>
                             <div class="form-group">
                                 <label >Celular o Telefono Persona</label>
-                                <input type="text" class="form-control" id="person_cellphone" placeholder="Ingrese DNI Persona...">
+                                <input type="text" class="form-control" onkeypress="return valida(event)" id="person_cellphone" placeholder="Ingrese Celular o Telefono Persona...">
                             </div>
                             <div class="form-group">
                                 <label >Genero Persona</label>
@@ -82,6 +82,19 @@
 </div>
 
 <script type="text/javascript">
+    function valida(e){
+        tecla = (document.all) ? e.keyCode : e.which;
+
+        //Tecla de retroceso para borrar, siempre la permite
+        if (tecla==8){
+            return true;
+        }
+        // Patron de entrada, en este caso solo acepta numeros
+        patron =/[0-9]/;
+        tecla_final = String.fromCharCode(tecla);
+        return patron.test(tecla_final);
+    }
+
     function add() {
         var valor = "correcto";
         var person_name = $('#person_name').val();

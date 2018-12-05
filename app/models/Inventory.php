@@ -87,6 +87,22 @@ class Inventory{
         return $result;
     }
 
+    //Obtener ID Producto Por Nombre
+    public function getProductID($name){
+        try{
+            $sql = "Select * from product where product_name = ?";
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([$name]);
+
+            $result = $stm->fetch();
+        } catch (Exception $e){
+            $this->log->insert($e->getMessage(), 'Inventory|listProduct');
+            $result = 2;
+        }
+
+        return $result->id_product;
+    }
+
     //Eliminar Producto Registrado
     public function deleteProduct($id){
         try{
@@ -407,6 +423,7 @@ class Inventory{
         return $result;
     }
 
+
     //Listar Locaciones Alquiler
     public function listlocations(){
         try {
@@ -459,6 +476,27 @@ class Inventory{
             $result = 2;
         }
         return $result;
+    }
+
+    //Insertar Stock Producto Recien Creado
+    public function setStockNew($producto, $id_turn, $stock){
+        try {
+            $sql = 'insert into startproduct(id_turn, id_product, startproduct_stock) values (?,?,?)';
+            $stm = $this->pdo->prepare($sql);
+            $stm->execute([
+                $id_turn,
+                $producto,
+                $stock
+            ]);
+            $result = 1;
+
+        } catch (Exception $e){
+            $error = $e->getMessage();
+            $this->log->insert($error, "Inventory|setStock");
+            $result = 2;
+        }
+        return $result;
+
     }
 
 }
