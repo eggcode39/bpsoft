@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-12-2018 a las 18:36:17
+-- Tiempo de generación: 05-12-2018 a las 03:47:44
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.0.27
 
@@ -36,14 +36,6 @@ CREATE TABLE `debt` (
   `debt_status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `debt`
---
-
-INSERT INTO `debt` (`id_debt`, `id_saleproduct`, `debt_total`, `debt_cancelled`, `debt_status`) VALUES
-(1, 9, 0.3, 0.1, 0),
-(2, 10, 0.6, 0.6, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -57,14 +49,6 @@ CREATE TABLE `debtpay` (
   `debtpay_mont` double NOT NULL,
   `debtpay_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `debtpay`
---
-
-INSERT INTO `debtpay` (`id_debtpay`, `id_debt`, `id_turn`, `debtpay_mont`, `debtpay_date`) VALUES
-(1, 1, 7, 0.1, '2018-11-22 21:01:54'),
-(2, 2, 7, 0.6, '2018-11-25 11:33:40');
 
 -- --------------------------------------------------------
 
@@ -107,13 +91,6 @@ CREATE TABLE `expense` (
   `expense_description` varchar(120) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `expense`
---
-
-INSERT INTO `expense` (`id_expense`, `id_turn`, `expense_mont`, `expense_description`) VALUES
-(2, 7, 10, 'Almuerzo Huevito');
-
 -- --------------------------------------------------------
 
 --
@@ -127,18 +104,6 @@ CREATE TABLE `location` (
   `location_status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `location`
---
-
-INSERT INTO `location` (`id_location`, `id_typelocation`, `location_name`, `location_status`) VALUES
-(1, 2, 'PS-1', 0),
-(2, 2, 'PS-2', 0),
-(3, 1, 'BILLAR-1', 1),
-(4, 1, 'BILLAR-2', 0),
-(7, 2, 'PS-3', 0),
-(8, 1, 'BILLAR-3', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -151,13 +116,6 @@ CREATE TABLE `locationrent` (
   `id_location` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `locationrent`
---
-
-INSERT INTO `locationrent` (`id_locationrent`, `id_salerent`, `id_location`) VALUES
-(1, 2, 3);
-
 -- --------------------------------------------------------
 
 --
@@ -167,27 +125,28 @@ INSERT INTO `locationrent` (`id_locationrent`, `id_salerent`, `id_location`) VAL
 CREATE TABLE `menu` (
   `id_menu` int(11) NOT NULL,
   `menu_name` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
-  `menu_icon` varchar(30) COLLATE utf8_spanish_ci NOT NULL
+  `menu_icon` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
+  `menu_show` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `menu`
 --
 
-INSERT INTO `menu` (`id_menu`, `menu_name`, `menu_icon`) VALUES
-(1, 'Login', 'fa fa-key'),
-(2, 'Inicio', 'fa fa-dashboard'),
-(3, 'Permisos', 'fa fa-check-square-o'),
-(4, 'Inventario', 'fa fa-pencil-square'),
-(5, 'Venta', 'fa fa-ticket'),
-(6, 'Deuda', 'fa fa-calendar'),
-(7, 'Personas', 'fa fa-user'),
-(8, 'Usuarios', 'fa fa-unlock-alt'),
-(9, 'Turnos', 'fa fa-code-fork'),
-(10, 'Reporte Del Dia', 'fa fa-calendar-o'),
-(11, 'Reporte Turnos', 'fa fa-calendar'),
-(12, 'Egresos', 'fa fa-book'),
-(13, 'Locaciones Alquiler', 'fa fa-compass');
+INSERT INTO `menu` (`id_menu`, `menu_name`, `menu_icon`, `menu_show`) VALUES
+(1, 'Login', 'fa fa-key', 1),
+(2, 'Inicio', 'fa fa-dashboard', 1),
+(3, 'Permisos', 'fa fa-check-square-o', 0),
+(4, 'Inventario', 'fa fa-pencil-square', 1),
+(5, 'Venta', 'fa fa-ticket', 1),
+(6, 'Deuda', 'fa fa-calendar', 1),
+(7, 'Personas', 'fa fa-user', 1),
+(8, 'Usuarios', 'fa fa-unlock-alt', 1),
+(9, 'Turnos', 'fa fa-code-fork', 1),
+(10, 'Reporte Del Dia', 'fa fa-calendar-o', 1),
+(11, 'Reporte Turnos', 'fa fa-calendar', 1),
+(12, 'Egresos', 'fa fa-book', 1),
+(13, 'Locaciones Alquiler', 'fa fa-compass', 1);
 
 -- --------------------------------------------------------
 
@@ -201,13 +160,6 @@ CREATE TABLE `object` (
   `object_description` varchar(600) COLLATE utf8_spanish_ci NOT NULL,
   `object_total` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `object`
---
-
-INSERT INTO `object` (`id_object`, `object_name`, `object_description`, `object_total`) VALUES
-(1, 'Bolas de Billar', 'Bolas para jugar el billar pe causa', 30);
 
 -- --------------------------------------------------------
 
@@ -351,7 +303,8 @@ INSERT INTO `person` (`id_person`, `person_name`, `person_surname`, `person_dni`
 (1, 'Alan', 'Brito', '77777773', 'Calle Siempre Viva 123', '987654322', 'M'),
 (2, 'Cliente ', 'Sin Registro', '00000000', 'Calle Siempre Viva #111', '999999999', 'M'),
 (3, 'Carlos Andres', 'Melendez', '77777789', 'Calle Sin Nombre 345', '965321478', 'M'),
-(4, 'Cesar', 'Ruiz', '72195723', 'Calle Estado de Israel 256', '969902084', 'M');
+(4, 'Cesar', 'Ruiz', '72195723', 'Calle Estado de Israel 256', '969902084', 'M'),
+(5, 'Kevin', 'Young', '12345678', 'Calle Por Ahi 222', '969902084', 'M');
 
 -- --------------------------------------------------------
 
@@ -366,16 +319,6 @@ CREATE TABLE `product` (
   `product_stock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `product`
---
-
-INSERT INTO `product` (`id_product`, `product_name`, `product_description`, `product_stock`) VALUES
-(1, 'Cerveza Pilsen 600ml', 'Cerveza Rica', 22),
-(2, 'Coca Cola 500ml', 'Gaseosa', 37),
-(3, 'Caramelo Halls Negro', 'Caramelos color negro', 73),
-(4, 'Cerveza Cristal 600ml', 'Chelita Sabrosa', 24);
-
 -- --------------------------------------------------------
 
 --
@@ -388,19 +331,6 @@ CREATE TABLE `productforsale` (
   `product_unid` int(11) NOT NULL,
   `product_price` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `productforsale`
---
-
-INSERT INTO `productforsale` (`id_productforsale`, `id_product`, `product_unid`, `product_price`) VALUES
-(1, 1, 3, 12),
-(2, 1, 1, 5),
-(3, 2, 1, 1.2),
-(4, 3, 1, 0.3),
-(5, 3, 3, 1),
-(6, 4, 1, 5),
-(7, 4, 3, 13);
 
 -- --------------------------------------------------------
 
@@ -415,14 +345,6 @@ CREATE TABLE `rent` (
   `rent_timeminutes` int(11) NOT NULL,
   `rent_cost` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `rent`
---
-
-INSERT INTO `rent` (`id_rent`, `rent_name`, `rent_description`, `rent_timeminutes`, `rent_cost`) VALUES
-(1, 'PS4', 'Alquiler por Hora', 60, 4),
-(2, 'Billar', 'Alquiler de Mesa', 60, 6);
 
 -- --------------------------------------------------------
 
@@ -442,7 +364,8 @@ CREATE TABLE `role` (
 
 INSERT INTO `role` (`id_role`, `role_name`, `role_description`) VALUES
 (1, 'Free', 'Its happy to be here'),
-(2, 'Admin', 'Manage Everything');
+(2, 'Admin', 'Manage Everything'),
+(3, 'Vendedor', 'Sell All');
 
 -- --------------------------------------------------------
 
@@ -473,7 +396,16 @@ INSERT INTO `rolemenu` (`id_rolemenu`, `id_role`, `id_menu`) VALUES
 (10, 2, 10),
 (11, 2, 11),
 (12, 2, 12),
-(13, 2, 13);
+(13, 2, 13),
+(14, 3, 2),
+(15, 3, 4),
+(16, 3, 5),
+(17, 3, 6),
+(18, 3, 7),
+(19, 3, 9),
+(20, 3, 10),
+(21, 3, 12),
+(22, 3, 13);
 
 -- --------------------------------------------------------
 
@@ -531,7 +463,38 @@ INSERT INTO `rolepermit` (`id_rolepermit`, `id_role`, `id_permit`) VALUES
 (43, 2, 42),
 (44, 2, 43),
 (45, 2, 44),
-(46, 2, 45);
+(46, 2, 45),
+(47, 3, 7),
+(48, 3, 8),
+(49, 3, 16),
+(50, 3, 17),
+(51, 3, 18),
+(52, 3, 19),
+(53, 3, 20),
+(54, 3, 21),
+(55, 3, 22),
+(56, 3, 23),
+(57, 3, 24),
+(58, 3, 25),
+(59, 3, 26),
+(60, 3, 27),
+(61, 3, 28),
+(62, 3, 29),
+(63, 3, 30),
+(64, 3, 31),
+(65, 3, 32),
+(66, 3, 33),
+(67, 3, 34),
+(68, 3, 35),
+(69, 3, 37),
+(70, 3, 38),
+(71, 3, 39),
+(72, 3, 40),
+(73, 3, 41),
+(74, 3, 42),
+(75, 3, 43),
+(76, 3, 44),
+(77, 3, 45);
 
 -- --------------------------------------------------------
 
@@ -550,23 +513,6 @@ CREATE TABLE `saledetail` (
   `sale_productstotalselled` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `saledetail`
---
-
-INSERT INTO `saledetail` (`id_saledetail`, `id_saleproduct`, `id_productforsale`, `sale_productname`, `sale_unid`, `sale_price`, `sale_productsselled`, `sale_productstotalselled`) VALUES
-(1, 1, 4, 'Caramelo Halls Negro', 1, 0.3, 2, 2),
-(2, 2, 5, 'Caramelo Halls Negro', 3, 1, 2, 6),
-(3, 3, 6, 'Cerveza Cristal 600ml', 1, 5, 1, 1),
-(4, 4, 7, 'Cerveza Cristal 600ml', 3, 13, 2, 6),
-(5, 5, 1, 'Cerveza Pilsen 600ml', 3, 12, 1, 3),
-(6, 6, 2, 'Cerveza Pilsen 600ml', 1, 5, 1, 1),
-(7, 7, 3, 'Coca Cola 500ml', 1, 1.2, 2, 2),
-(8, 8, 4, 'Caramelo Halls Negro', 1, 0.3, 2, 2),
-(9, 9, 4, 'Caramelo Halls Negro', 1, 0, 1, 1),
-(10, 10, 4, 'Caramelo Halls Negro', 1, 0, 2, 2),
-(11, 11, 5, 'Caramelo Halls Negro', 3, 0, 1, 3);
-
 -- --------------------------------------------------------
 
 --
@@ -582,23 +528,6 @@ CREATE TABLE `saleproduct` (
   `saleproduct_date` datetime NOT NULL,
   `saleproduct_cancelled` varchar(5) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `saleproduct`
---
-
-INSERT INTO `saleproduct` (`id_saleproduct`, `id_person`, `id_user`, `id_turn`, `saleproduct_total`, `saleproduct_date`, `saleproduct_cancelled`) VALUES
-(1, 2, 1, 7, 0.6, '2018-11-22 19:40:56', 'true'),
-(2, 2, 1, 7, 2, '2018-11-22 19:41:03', 'true'),
-(3, 2, 1, 7, 5, '2018-11-22 19:41:12', 'true'),
-(4, 2, 1, 7, 26, '2018-11-22 19:41:22', 'true'),
-(5, 2, 1, 7, 12, '2018-11-22 19:41:30', 'true'),
-(6, 2, 1, 7, 5, '2018-11-22 19:41:41', 'true'),
-(7, 2, 1, 7, 2.4, '2018-11-22 19:41:52', 'true'),
-(8, 2, 3, 7, 0.6, '2018-11-22 21:01:16', 'true'),
-(9, 1, 3, 7, 0.3, '2018-11-22 21:01:34', 'false'),
-(10, 3, 1, 7, 0.6, '2018-11-24 12:04:15', 'false'),
-(11, 2, 1, 7, 0, '2018-11-24 12:04:35', 'true');
 
 -- --------------------------------------------------------
 
@@ -621,14 +550,6 @@ CREATE TABLE `salerent` (
   `salerent_cancelled` varchar(5) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `salerent`
---
-
-INSERT INTO `salerent` (`id_salerent`, `id_rent`, `id_person`, `id_user`, `id_location`, `id_turn`, `salerent_date`, `salerent_start`, `salerent_finish`, `salerent_total`, `salerent_finished`, `salerent_cancelled`) VALUES
-(1, 1, 3, 3, 1, 7, '2018-11-22', '21:05:03', '23:05:03', 8, 1, 'true'),
-(2, 2, 2, 1, 3, 7, '2018-12-02', '19:24:19', '20:24:19', 6, 0, 'true');
-
 -- --------------------------------------------------------
 
 --
@@ -641,16 +562,6 @@ CREATE TABLE `startproduct` (
   `id_product` int(11) NOT NULL,
   `startproduct_stock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `startproduct`
---
-
-INSERT INTO `startproduct` (`id_startproduct`, `id_turn`, `id_product`, `startproduct_stock`) VALUES
-(1, 7, 1, 26),
-(2, 7, 2, 39),
-(3, 7, 3, 69),
-(4, 7, 4, 31);
 
 -- --------------------------------------------------------
 
@@ -665,13 +576,6 @@ CREATE TABLE `stocklog` (
   `stocklog_added` int(11) NOT NULL,
   `stocklog_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `stocklog`
---
-
-INSERT INTO `stocklog` (`id_stocklog`, `id_product`, `id_turn`, `stocklog_added`, `stocklog_date`) VALUES
-(2, 3, 7, 20, '2018-11-22 18:53:27');
 
 -- --------------------------------------------------------
 
@@ -692,12 +596,7 @@ CREATE TABLE `turn` (
 --
 
 INSERT INTO `turn` (`id_turn`, `turn_datestart`, `turn_datefinish`, `turn_active`, `turn_wasactive`) VALUES
-(1, '2018-11-19 10:00:00', '2018-11-19 18:00:00', 0, 1),
-(2, '2018-11-19 18:00:00', '2018-11-20 06:00:00', 0, 1),
-(5, '2018-11-20 18:00:00', '2018-11-21 04:00:00', 0, 1),
-(6, '2018-11-21 04:00:00', '2018-11-21 18:00:00', 0, 1),
-(7, '2018-11-21 18:00:00', '2018-11-22 10:00:00', 1, 1),
-(8, '2018-11-22 10:00:00', '2018-11-23 04:00:00', 0, 0);
+(7, '2018-11-21 18:00:00', '2018-11-22 10:00:00', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -716,7 +615,8 @@ CREATE TABLE `typelocation` (
 
 INSERT INTO `typelocation` (`id_typelocation`, `typelocation_name`) VALUES
 (1, 'BILLAR'),
-(2, 'PLAY STATION 4');
+(2, 'PLAY STATION 4'),
+(3, 'BILLAS');
 
 -- --------------------------------------------------------
 
@@ -739,8 +639,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `id_person`, `id_role`, `user_nickname`, `user_password`, `user_image`, `user_status`) VALUES
-(1, 1, 2, 'el_huevas', '$2y$10$t0pvs.8vpcAEwq.ZK.j8iOHFgUNo8Rv3YeFd926LhrNc4XCf.qR7m', 'media/user/1/user.jpg', 1),
-(3, 3, 2, 'carlitos', '$2y$10$NT0aNyHON1hi6P3A.QvVjemzAPuCQ4enp3Dmwh7QnopOMfpwTyl1O', 'media/user/1/user.jpg', 1);
+(1, 4, 2, 'el_huevas', '$2y$10$t0pvs.8vpcAEwq.ZK.j8iOHFgUNo8Rv3YeFd926LhrNc4XCf.qR7m', 'media/user/1/user.jpg', 1),
+(3, 3, 3, 'carlitos', '$2y$10$EXNwmtYdhiubCtV9VPsQMO4KsC5kbcTMSan4bKalrJmEMHqmqTcGy', 'media/user/1/user.jpg', 1);
 
 --
 -- Índices para tablas volcadas
@@ -942,13 +842,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de la tabla `debt`
 --
 ALTER TABLE `debt`
-  MODIFY `id_debt` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_debt` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `debtpay`
 --
 ALTER TABLE `debtpay`
-  MODIFY `id_debtpay` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_debtpay` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `debtrent`
@@ -966,19 +866,19 @@ ALTER TABLE `debtrentpay`
 -- AUTO_INCREMENT de la tabla `expense`
 --
 ALTER TABLE `expense`
-  MODIFY `id_expense` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_expense` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `location`
 --
 ALTER TABLE `location`
-  MODIFY `id_location` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_location` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `locationrent`
 --
 ALTER TABLE `locationrent`
-  MODIFY `id_locationrent` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_locationrent` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `menu`
@@ -990,7 +890,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT de la tabla `object`
 --
 ALTER TABLE `object`
-  MODIFY `id_object` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_object` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `optionmenu`
@@ -1008,73 +908,73 @@ ALTER TABLE `permit`
 -- AUTO_INCREMENT de la tabla `person`
 --
 ALTER TABLE `person`
-  MODIFY `id_person` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_person` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `product`
 --
 ALTER TABLE `product`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `productforsale`
 --
 ALTER TABLE `productforsale`
-  MODIFY `id_productforsale` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_productforsale` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `rent`
 --
 ALTER TABLE `rent`
-  MODIFY `id_rent` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_rent` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `role`
 --
 ALTER TABLE `role`
-  MODIFY `id_role` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_role` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `rolemenu`
 --
 ALTER TABLE `rolemenu`
-  MODIFY `id_rolemenu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_rolemenu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `rolepermit`
 --
 ALTER TABLE `rolepermit`
-  MODIFY `id_rolepermit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id_rolepermit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
 -- AUTO_INCREMENT de la tabla `saledetail`
 --
 ALTER TABLE `saledetail`
-  MODIFY `id_saledetail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_saledetail` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `saleproduct`
 --
 ALTER TABLE `saleproduct`
-  MODIFY `id_saleproduct` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_saleproduct` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `salerent`
 --
 ALTER TABLE `salerent`
-  MODIFY `id_salerent` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_salerent` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `startproduct`
 --
 ALTER TABLE `startproduct`
-  MODIFY `id_startproduct` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_startproduct` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `stocklog`
 --
 ALTER TABLE `stocklog`
-  MODIFY `id_stocklog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_stocklog` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `turn`
@@ -1086,7 +986,7 @@ ALTER TABLE `turn`
 -- AUTO_INCREMENT de la tabla `typelocation`
 --
 ALTER TABLE `typelocation`
-  MODIFY `id_typelocation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_typelocation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `user`
